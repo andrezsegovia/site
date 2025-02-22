@@ -1,7 +1,11 @@
 #!/bin/bash
 
-# Ensure the dist directory exists
+# Remove and recreate the dist directory to ensure a clean build
+rm -rf dist
 mkdir -p dist
+
+# Copy the assets folder into dist/
+cp -r assets dist/
 
 # Find all .md files except README.md and process them
 find . -name "*.md" ! -name "README.md" | while read file; do
@@ -15,4 +19,5 @@ find . -name "*.md" ! -name "README.md" | while read file; do
     pandoc --lua-filter=fix_links.lua --template=template.html "$file" -o "$output"
 done
 
-echo "Markdown files converted to HTML successfully in the dist/ folder, excluding README.md!"
+echo "Conversion completed: Markdown files converted to HTML in the dist/ folder."
+echo "Assets folder copied to dist/."
