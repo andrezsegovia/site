@@ -1,0 +1,51 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Ensure the body takes up the full viewport */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+    background: linear-gradient(135deg, #00b4db, #0083b0);
+    color: white;
+}
+
+/* Container for content */
+.container {
+    width: 90%;
+    max-width: 800px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Headings */
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Paragraph */
+p {
+    font-size: 1.2rem;
+}
+
+/* Responsive text adjustments */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+}
+
