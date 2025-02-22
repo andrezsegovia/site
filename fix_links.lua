@@ -1,45 +1,37 @@
+-- Function to rewrite URLs based on your rules
 function rewrite_url(url)
+    -- Ignore external links (starting with http or https)
     if url:match("^https?://") then
-        -- Do not modify external links
         return url
-    elseif url:match("^/assets/") or url:match("^[.]+/assets/") then
-        -- Convert all assets references to absolute paths with /andrezsegovia/
-        return "/andrezsegovia/assets/" .. url:gsub("^.*/assets/", "")
+    end
+
+    -- Rules for links pointing to the "assets" folder
+    if url:match("[%.%./]*assets/") then
+        return url:gsub("^[%.%./]*assets/", "/andrezsegovia/assets/")
     else
-        -- Convert all other internal links to absolute paths with /andrezsegovia/
-        return "/andrezsegovia/" .. url:gsub("^.*/", "")
+        local new_target = url:gsub("%.md$", ".html")
+        -- Rules for other internal links
+        return new_target:gsub("^[%.%./]*", "/andrezsegovia/")
     end
 end
 
-function process_attribute(el, attr)
-    if el[attr] then
-        el[attr] = rewrite_url(el[attr])
-    end
-end
-
+-- Process <a href=""> (Hyperlinks)
 function Link(el)
     el.target = rewrite_url(el.target)
     return el
 end
 
+-- Process <img src="">, <audio src="">, <video src="">, <source src="">, <track src="">, <iframe src="">, <embed src="">, <object data="">
 function Image(el)
     el.src = rewrite_url(el.src)
     return el
 end
 
-function Meta(el)
-    process_attribute(el, "content")
-    return el
-end
-
-function Inline(el)
-    process_attribute(el, "src")
-    process_attribute(el, "href")
-    return el
-end
-
-function Div(el)
-    process_attribute(el, "src")
-    process_attribute(el, "href")
-    return el
+function RawBlock(el)
+    -- Modify URLs inside raw HTML blocks
+    local modified_text = el.text:gsub('(href|src|data|action|formaction)="([^"]+)"', function(attr, url)
+        return attr .. '="' .. rewrite_url(url) .. '"'
+    end)
+    
+    return pandoc.RawBlock(el.format, modified_text)
 end
