@@ -1,23 +1,23 @@
 #!/bin/bash
 
-# Remove and recreate the dist directory to ensure a clean build
+# Clean up the dist folder before conversion
 rm -rf dist
 mkdir -p dist
 
-# Copy the assets folder into dist/
-cp -r assets dist/
+# Recursively find all .md files except README.md
+find . -type f -name "*.md" ! -name "README.md" | while read file; do
+    output="dist/${file%.md}.html"
 
-# Find all .md files except README.md and process them
-find . -name "*.md" ! -name "README.md" | while read file; do
-    output="${file%.md}.html"
+    # Create necessary directories
+    mkdir -p "$(dirname "$output")"
 
-    # Convert .md files to .html in the dist/ folder
-    output="dist/${output#./}"
-    mkdir -p "$(dirname "$output")"  # Create necessary subdirectories
-
-    # Run pandoc with the Lua filter
-    pandoc --lua-filter=fix_links.lua --template=template.html "$file" -o "$output"
+    # Convert markdown to HTML using Pandoc and apply fix_links.lua
+    pandoc "$file" --lua-filter=fix_links.lua --template=template.html -o "$output"
 done
 
 echo "Conversion completed: Markdown files converted to HTML in the dist/ folder."
+
+# Copy the assets folder to dist
+cp -r assets dist/
+
 echo "Assets folder copied to dist/."
