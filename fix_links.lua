@@ -11,9 +11,13 @@ function Link(el)
         el.target = new_target
     end
 
-    -- Fix references to assets/
-    if el.target:match("assets/") then
-        -- Adjust the path based on the depth of the file
+    -- Fix absolute references to assets (e.g., "/assets/img.png" → "../assets/img.png")
+    if el.target:match("^/assets/") then
+        el.target = ".." .. el.target  -- Ensure correct relative path from `dist/`
+    end
+
+    -- Fix relative references to assets (adjusting depth)
+    if el.target:match("assets/") and not el.target:match("^https?://") then
         local depth = 0
         for _ in el.target:gmatch("%.%.?/") do
             depth = depth + 1
