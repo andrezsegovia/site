@@ -1,4 +1,30 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = 'https://asecru.com/'
+title = 'Andrez Segovia'
+copyright = '2025 Andrez Segovia'
+
 theme = 'hugo-bearcub'
+
+defaultContentLanguage = 'en'
+languageCode = 'en-us'
+
+[markdup]
+    [markdup.highlight]
+        lineNos = true
+        lineNumberInTable = false
+        noClasses = false
+
+[languages]
+  [languages.en]
+    title = "Bear Cub"
+    languageName = "en-US 🇺🇸"
+    LanguageCode = "en-US"
+    contentDir = "content"
+    [languages.en.params]
+      madeWith = "Made with [Bear Cub](https://github.com/clente/hugo-bearcub)"
+
+
+[params]
+    [params.author]
+        name = 'Andrez Segovia'
+        email = "andrez@asecru.com"
+
