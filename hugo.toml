@@ -15,7 +15,7 @@ languageCode = 'en-us'
 
 [languages]
   [languages.en]
-    title = "Bear Cub"
+    title = "Andrez Segovia"
     languageName = "en-US 🇺🇸"
     LanguageCode = "en-US"
     contentDir = "content"
