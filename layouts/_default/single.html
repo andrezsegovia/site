@@ -1,0 +1,33 @@
+{{ define "main" }}
+<section>
+    <h1 id="title">{{ .Title }}</h1>
+    <label id="published-on">
+        {{ with .Date }}
+        {{ $dateMachine := . | time.Format "2006-01-02T15:04:05-07:00" }}
+        {{ $dateHuman := . | time.Format ":date_medium" }}
+        Published on <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+        {{ end }}
+    </label>
+    </br>
+    <label id="updated-on">
+        {{ with .Lastmod }}
+        {{ $dateMachine := . | time.Format "2006-01-02T15:04:05-07:00" }}
+        {{ $dateHuman := . | time.Format ":date_medium" }}
+        Updated on <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+        {{ end }}
+    </label>
+
+    <article>
+        {{ .Content }}
+    </article>
+
+    <aside id="tags-list">
+        {{ with .GetTerms "tags" }}
+        {{ range . }}
+        <a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a>
+        {{ end }}
+        {{ end }}
+    </aside>
+
+</section>
+{{ end }}

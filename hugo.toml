@@ -7,6 +7,9 @@ theme = 'hugo-bearcub'
 defaultContentLanguage = 'en'
 languageCode = 'en-us'
 
+summaryLength = 10
+disableKinds = ['rss']
+
 [markdup]
     [markdup.highlight]
         lineNos = true
@@ -28,3 +31,11 @@ languageCode = 'en-us'
         name = 'Andrez Segovia'
         email = "andrez@asecru.com"
 
+[menus]
+  [[menus.main]]
+    name = 'All Tags'
+    pageRef = '/tags'
+    weight = 11
+
+[taxonomies]
+  tag = 'tags'

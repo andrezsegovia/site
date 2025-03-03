@@ -1,0 +1,10 @@
+{{ define "main" }}
+<div class="tag-list">
+    {{range .Pages}}
+        <div class="tag-container">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a> ({{ .Pages.Len }})
+
+        </div>
+    {{end}}
+</div>
+{{ end }}

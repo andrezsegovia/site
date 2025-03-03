@@ -1,0 +1,43 @@
+{{ define "main" }}
+    <style>
+        #content {
+            margin-bottom: 25px;
+            margin-top: 25px;
+        }
+
+        #content #content-header a#title  {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        #content a:link {
+            text-decoration: none;
+        }
+
+        #content #content-header #published-on {
+            font-size: 12px;
+        }
+    </style>
+    {{ range .Pages }}
+    <div id="content">
+        <div id="content-header">
+          <a id="title" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+          <br />
+          <label id="published-on">
+            {{ with .Date }}
+            {{ $dateMachine := . | time.Format "2006-01-02T15:04:05-07:00" }}
+            {{ $dateHuman := . | time.Format ":date_medium" }}
+            Published on <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+            {{ end }}
+          </label>
+        </div>
+        <div id="content-body">
+          {{ .Summary }}
+          {{ if .Truncated }}
+            <a href="{{ .RelPermalink }}">Continue reading ... </a>
+          {{ end }}
+        </div>
+        <div id="content-footer"></div>
+      </div>
+    {{ end }}
+{{ end }}
