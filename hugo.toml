@@ -1,6 +1,6 @@
 baseURL = 'https://asecru.com/'
 title = 'Andrez Segovia'
-copyright = '2025 Andrez Segovia'
+copyright = '© 2025 Andrez Segovia'
 
 theme = 'hugo-bearcub'
 

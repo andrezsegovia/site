@@ -2,9 +2,9 @@
     <header>
         <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
         <div class="post-meta">
-            {{ .Date.Format "Jan 2, 2006" }}
+            Published on {{ .Date | time.Format ":date_long" }}
             &#x2022;  
-            {{ .FuzzyWordCount }} Words 
+            {{ .WordCount }} Words 
             {{ $categories := .GetTerms "categories" }}
             {{ if gt $categories.Len 0}}
                 &#x2022;

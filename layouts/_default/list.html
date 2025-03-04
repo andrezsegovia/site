@@ -1,10 +1,17 @@
-
 {{ define "main" }}
-<div class="category-list">
-    {{range .Pages}}
-        <div class="tag-container">
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a> ({{ .Pages.Len }})
+<div class="categories">
+    <div class="header">
+        <p>Here are all the categories.</p>
+    </div>
+    <div class="body">
+        {{range .Pages.ByTitle}}
+        <div class="category">
+            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+            <span class="subsup">
+                <sub>({{ .Pages.Len }})</sub>
+            </span>
         </div>
-    {{end}}
+        {{end}}
+    </div>
 </div>
 {{ end }}

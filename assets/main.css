@@ -1,21 +1,41 @@
+header nav a:link {
+    text-decoration: none;
+}
+
 .subsup {
     font-size: 16px;
-  }
+}
 
-  .post header h2 {
-      padding-bottom: 0;
-      margin-bottom: 0;
-  }
+.post header h2 {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
 
-  .post header h2 a:link {
-      text-decoration: none;
-  }
+.post header h2 a:link {
+    text-decoration: none;
+}
 
-  .post header .post-meta {
-      font-size: 14px;
-  }
+.post header .post-meta {
+    font-size: 14px;
+}
 
-  .post footer {
-      padding: 0;
-      text-align: left;
-  }
+.post footer {
+    padding: 0;
+    text-align: left;
+}
+
+.categories {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.categories a:link {
+    text-decoration: none;
+}
+
+.header h1 {
+    margin-bottom: 0;
+}
+.header  .subtitle {
+    font-size: 14px;
+}
