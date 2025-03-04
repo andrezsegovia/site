@@ -1,5 +1,6 @@
+
 {{ define "main" }}
-<div class="tag-list">
+<div class="category-list">
     {{range .Pages}}
         <div class="tag-container">
             <a href="{{ .RelPermalink }}">{{ .Title }}</a> ({{ .Pages.Len }})

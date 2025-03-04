@@ -33,9 +33,9 @@ disableKinds = ['rss']
 
 [menus]
   [[menus.main]]
-    name = 'All Tags'
-    pageRef = '/tags'
+    name = 'All Categories'
+    pageRef = '/categories'
     weight = 11
 
 [taxonomies]
-  tag = 'tags'
+  category = 'categories'
