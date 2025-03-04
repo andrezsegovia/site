@@ -39,3 +39,5 @@ disableKinds = ['rss']
 
 [taxonomies]
   category = 'categories'
+
+enableGitInfo = true
