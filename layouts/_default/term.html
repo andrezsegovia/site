@@ -1,43 +1,37 @@
 {{ define "main" }}
     <style>
-        #content {
-            margin-bottom: 25px;
-            margin-top: 25px;
+        .subsup {
+          font-size: 16px;
         }
 
-        #content #content-header a#title  {
-            font-size: 24px;
-            font-weight: bold;
+        .post header h2 {
+            padding-bottom: 0;
+            margin-bottom: 0;
         }
 
-        #content a:link {
+        .post header h2 a:link {
             text-decoration: none;
         }
 
-        #content #content-header #published-on {
-            font-size: 12px;
+        .post header .post-meta {
+            font-size: 14px;
+        }
+
+        .post footer {
+            padding: 0;
+            text-align: left;
         }
     </style>
-    {{ range .Pages }}
-    <div id="content">
-        <div id="content-header">
-          <a id="title" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-          <br />
-          <label id="published-on">
-            {{ with .Date }}
-            {{ $dateMachine := . | time.Format "2006-01-02T15:04:05-07:00" }}
-            {{ $dateHuman := . | time.Format ":date_medium" }}
-            Published on <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
-            {{ end }}
-          </label>
-        </div>
-        <div id="content-body">
-          {{ .Summary }}
-          {{ if .Truncated }}
-            <a href="{{ .RelPermalink }}">Continue reading ... </a>
-          {{ end }}
-        </div>
-        <div id="content-footer"></div>
-      </div>
+
+    {{ $pages := .Pages }}
+    <div>
+      <h1>{{ .Title }} 
+        <span class="subsup">
+          <sub>({{ $pages.Len }})</sub>
+        </span>
+      </h1>
+    </div>
+    {{ range $pages}}
+      {{ .Render "summary"}}
     {{ end }}
 {{ end }}

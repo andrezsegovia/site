@@ -21,8 +21,8 @@
         {{ .Content }}
     </article>
 
-    <aside id="tags-list">
-        {{ with .GetTerms "tags" }}
+    <aside id="category-list">
+        {{ with .GetTerms "categories" }}
         {{ range . }}
         <a href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a>
         {{ end }}

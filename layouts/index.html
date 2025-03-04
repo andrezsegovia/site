@@ -1,52 +1,25 @@
 {{ define "main" }}
-  {{ .Content }}
   <style>
-      #content {
-          margin-bottom: 25px;
-          margin-top: 25px;
-      }
+    .post header h2 {
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
 
-      #content #content-header a#title  {
-          font-size: 24px;
-          font-weight: bold;
-      }
+    .post header h2 a:link {
+        text-decoration: none;
+    }
 
-      #content a:link {
-          text-decoration: none;
-      }
+    .post header .post-meta {
+        font-size: 14px;
+    }
 
-      #content #content-header .header-subtitle {
-          font-size: 12px;
-      }
+    .post footer {
+        padding: 0;
+        text-align: left;
+    }
   </style>
-  {{ range site.RegularPages}}
-    <div id="content">
-      <div id="content-header">
-        <a id="title" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-        <br />
-        <div class="header-subtitle">
-          <label>
-            {{ with .Date }}
-            {{ $dateMachine := . | time.Format "2006-01-02T15:04:05-07:00" }}
-            {{ $dateHuman := . | time.Format ":date_medium" }}
-            Published on <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
-            {{ end }}
-          </label>
-          - 
-            {{ with .GetTerms "tags" }}
-              {{ range . }}
-                <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
-              {{ end }}
-            {{ end }}
-        </div>
-      </div>
-      <div id="content-body">
-        {{ .Summary }}
-        {{ if .Truncated }}
-          <a href="{{ .RelPermalink }}">Continue reading ... </a>
-        {{ end }}
-      </div>
-      <div id="content-footer"></div>
-    </div>
-  {{ end }}
+  {{ .Content }}
+    {{range site.RegularPages }}
+      {{ .Render "summary"}}
+    {{ end }}
 {{ end }}
