@@ -1,23 +1,6 @@
 {{ define "main" }}
-  <style>
-    .post header h2 {
-        padding-bottom: 0;
-        margin-bottom: 0;
-    }
-
-    .post header h2 a:link {
-        text-decoration: none;
-    }
-
-    .post header .post-meta {
-        font-size: 14px;
-    }
-
-    .post footer {
-        padding: 0;
-        text-align: left;
-    }
-  </style>
+  {{ $stylesFile := resources.Get "main.css" | minify}}
+  <link href="{{ $stylesFile.RelPermalink }}" rel="stylesheet">
   {{ .Content }}
     {{range site.RegularPages }}
       {{ .Render "summary"}}

@@ -1,0 +1,21 @@
+.subsup {
+    font-size: 16px;
+  }
+
+  .post header h2 {
+      padding-bottom: 0;
+      margin-bottom: 0;
+  }
+
+  .post header h2 a:link {
+      text-decoration: none;
+  }
+
+  .post header .post-meta {
+      font-size: 14px;
+  }
+
+  .post footer {
+      padding: 0;
+      text-align: left;
+  }

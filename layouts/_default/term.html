@@ -1,37 +1,16 @@
 {{ define "main" }}
-    <style>
-        .subsup {
-          font-size: 16px;
-        }
+  {{ $stylesFile := resources.Get "main.css" | minify}}
+  <link href="{{ $stylesFile.RelPermalink }}" rel="stylesheet">
 
-        .post header h2 {
-            padding-bottom: 0;
-            margin-bottom: 0;
-        }
-
-        .post header h2 a:link {
-            text-decoration: none;
-        }
-
-        .post header .post-meta {
-            font-size: 14px;
-        }
-
-        .post footer {
-            padding: 0;
-            text-align: left;
-        }
-    </style>
-
-    {{ $pages := .Pages }}
-    <div>
-      <h1>{{ .Title }} 
-        <span class="subsup">
-          <sub>({{ $pages.Len }})</sub>
-        </span>
-      </h1>
-    </div>
-    {{ range $pages}}
-      {{ .Render "summary"}}
-    {{ end }}
+  {{ $pages := .Pages }}
+  <div>
+    <h1>{{ .Title }} 
+      <span class="subsup">
+        <sub>({{ $pages.Len }})</sub>
+      </span>
+    </h1>
+  </div>
+  {{ range $pages}}
+    {{ .Render "summary"}}
+  {{ end }}
 {{ end }}
