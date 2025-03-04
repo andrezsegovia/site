@@ -1,4 +1,4 @@
-baseURL = 'https://asecru.com/'
+baseURL = 'https://andrezsc.com/'
 title = 'Andrez Segovia'
 copyright = '© 2025 Andrez Segovia'
 
@@ -31,7 +31,7 @@ enableGitInfo = true
 [params]
     [params.author]
         name = 'Andrez Segovia'
-        email = "andrez@asecru.com"
+        email = "me@andrezsc.com"
 
 [menus]
   [[menus.main]]
