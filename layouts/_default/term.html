@@ -1,7 +1,4 @@
 {{ define "main" }}
-  {{ $stylesFile := resources.Get "main.css" | minify}}
-  <link href="{{ $stylesFile.RelPermalink }}" rel="stylesheet">
-
   {{ $pages := .Pages }}
   <div>
     <h1>{{ .Title }} 

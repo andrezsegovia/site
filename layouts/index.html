@@ -1,6 +1,4 @@
 {{ define "main" }}
-  {{ $stylesFile := resources.Get "main.css" | minify}}
-  <link href="{{ $stylesFile.RelPermalink }}" rel="stylesheet">
   {{ .Content }}
     {{range site.RegularPages }}
       {{ .Render "summary"}}
