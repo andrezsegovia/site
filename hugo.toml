@@ -10,6 +10,8 @@ languageCode = 'en-us'
 summaryLength = 10
 disableKinds = ['rss']
 
+enableGitInfo = true
+
 [markdup]
     [markdup.highlight]
         lineNos = true
@@ -40,4 +42,3 @@ disableKinds = ['rss']
 [taxonomies]
   category = 'categories'
 
-enableGitInfo = true
