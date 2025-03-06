@@ -44,5 +44,14 @@ ignoreFiles = ['content/templates', 'content/.obsidian']
 [taxonomies]
   category = 'categories'
 
+[[module.mounts]]
+  source = 'static'
+  target = 'static'
+
+[[module.mounts]]
+  source = 'img'
+  target = 'static/img'
+
+
 
 
