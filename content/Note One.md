@@ -11,7 +11,7 @@ Lorem ipsum odor amet, consectetuer adipiscing elit. Faucibus sodales nisl, nisi
 
 Sollicitudin aenean turpis dictum massa blandit vel fringilla vestibulum fames. Nisi aliquet vitae velit; et facilisi molestie magna suscipit feugiat. Turpis condimentum adipiscing litora feugiat fringilla. Odio elementum senectus congue platea, velit velit. Vestibulum nam lobortis at velit fames pulvinar. Dapibus inceptos efficitur facilisis auctor mus purus ridiculus. Rutrum ligula suscipit praesent aenean nisl litora iaculis in. Augue viverra et accumsan eget montes ligula. Maximus iaculis auctor ipsum cras sapien nibh. Dapibus rhoncus lobortis proin duis fames mollis dignissim bibendum.
 
-![](../img/IMG_4362.jpeg)
+![](/img/IMG_4362.jpeg)
 
 Suspendisse quisque erat massa platea euismod pretium nullam. Accumsan class himenaeos viverra dis maximus interdum dui malesuada. Magnis mi facilisi scelerisque ultricies maecenas. Cras ornare dis sollicitudin sociosqu sagittis. Phasellus torquent neque montes nulla ipsum torquent. Dui potenti mollis nec dapibus; arcu non. Posuere volutpat nullam in fusce pharetra tempus ante integer nisi.
 

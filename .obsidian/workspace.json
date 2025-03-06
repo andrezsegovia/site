@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "ee962ace047519b5",
@@ -171,10 +171,10 @@
   "active": "488668d5824b58e4",
   "lastOpenFiles": [
     "img/IMG_4362.jpeg",
+    "content/Note One.md",
     "public/note-one/index.html",
     "public/note-one",
     "templates/Basic.md",
-    "content/Note One.md",
     "content/Untitled.md",
     "public/index.html",
     "public/404.html",
