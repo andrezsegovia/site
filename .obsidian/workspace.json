@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "templates/Basic.md",
+                "file": "content/Note One.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Basic"
+              "title": "Note One"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "templates/Basic.md",
+                "file": "content/Note One.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Basic"
+              "title": "Backlinks for Note One"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "templates/Basic.md",
+                "file": "content/Note One.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Basic"
+              "title": "Outgoing links from Note One"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "templates/Basic.md",
+                "file": "content/Note One.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Basic"
+              "title": "Outline of Note One"
             }
           }
         ]
@@ -168,10 +168,14 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "08744c5f3734f612",
+  "active": "488668d5824b58e4",
   "lastOpenFiles": [
-    "content/Untitled.md",
     "img/IMG_4362.jpeg",
+    "public/note-one/index.html",
+    "public/note-one",
+    "templates/Basic.md",
+    "content/Note One.md",
+    "content/Untitled.md",
     "public/index.html",
     "public/404.html",
     "public/untitled/index.html",
@@ -180,8 +184,6 @@
     "public/categories/index.html",
     "public/categories/draft",
     "public/categories",
-    "public/main.min.css",
-    "public/original.min.css",
     "public/img/IMG_4362.jpeg",
     "content/post/Post 1.md",
     "public/IMG_4362-min-2.jpeg",
