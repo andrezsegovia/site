@@ -14,7 +14,7 @@
               "type": "markdown",
               "state": {
                 "file": "content/_index.md",
-                "mode": "preview",
+                "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
@@ -171,6 +171,7 @@
   "active": "488668d5824b58e4",
   "lastOpenFiles": [
     "content/Note One.md",
+    "content/_index.md",
     "img/IMG_4362.jpeg",
     "public/note-one/index.html",
     "public/note-one",
