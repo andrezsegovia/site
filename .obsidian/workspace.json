@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/_index.md",
-                "mode": "source",
+                "file": "content/The Web Revival.md",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "_index"
+              "title": "The Web Revival"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/_index.md",
+                "file": "content/The Web Revival.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for _index"
+              "title": "Backlinks for The Web Revival"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/_index.md",
+                "file": "content/The Web Revival.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from _index"
+              "title": "Outgoing links from The Web Revival"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/_index.md",
+                "file": "content/The Web Revival.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of _index"
+              "title": "Outline of The Web Revival"
             }
           }
         ]
@@ -170,8 +170,15 @@
   },
   "active": "488668d5824b58e4",
   "lastOpenFiles": [
-    "content/Note One.md",
+    "public/categories/internet/index.html",
+    "public/categories/internet",
+    "public/categories/thoughts/index.html",
+    "public/categories/thoughts",
+    "public/the-web-revival/index.html",
+    "public/the-web-revival",
     "content/_index.md",
+    "content/The Web Revival.md",
+    "content/Note One.md",
     "img/IMG_4362.jpeg",
     "public/note-one/index.html",
     "public/note-one",
@@ -180,11 +187,6 @@
     "public/index.html",
     "public/404.html",
     "public/untitled/index.html",
-    "public/untitled",
-    "public/categories/draft/index.html",
-    "public/categories/index.html",
-    "public/categories/draft",
-    "public/categories",
     "public/img/IMG_4362.jpeg",
     "content/post/Post 1.md",
     "public/IMG_4362-min-2.jpeg",
