@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/The Web Revival.md",
-                "mode": "preview",
+                "file": "content/Taking Back The Web.md",
+                "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "The Web Revival"
+              "title": "Taking Back The Web"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/The Web Revival.md",
+                "file": "content/Taking Back The Web.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for The Web Revival"
+              "title": "Backlinks for Taking Back The Web"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/The Web Revival.md",
+                "file": "content/Taking Back The Web.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from The Web Revival"
+              "title": "Outgoing links from Taking Back The Web"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/The Web Revival.md",
+                "file": "content/Taking Back The Web.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of The Web Revival"
+              "title": "Outline of Taking Back The Web"
             }
           }
         ]
@@ -170,8 +170,10 @@
   },
   "active": "d7d044ef00035a69",
   "lastOpenFiles": [
-    "content/The Small Web.md",
+    "content/The IndieWeb.md",
+    "content/Taking Back The Web.md",
     "content/The Web Revival.md",
+    "content/The Small Web.md",
     "public/categories/internet/index.html",
     "public/categories/internet",
     "public/categories/thoughts/index.html",
