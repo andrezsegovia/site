@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "fa3d658b0532b131",
+        "id": "cd001b3e1464dd1c",
         "type": "tabs",
         "children": [
           {
-            "id": "488668d5824b58e4",
+            "id": "d7d044ef00035a69",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/The Web Revival.md",
+                "file": "content/The Small Web.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "The Web Revival"
+              "title": "The Small Web"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/The Web Revival.md",
+                "file": "content/The Small Web.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for The Web Revival"
+              "title": "Backlinks for The Small Web"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/The Web Revival.md",
+                "file": "content/The Small Web.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from The Web Revival"
+              "title": "Outgoing links from The Small Web"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/The Web Revival.md",
+                "file": "content/The Small Web.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of The Web Revival"
+              "title": "Outline of The Small Web"
             }
           }
         ]
@@ -168,8 +168,10 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "488668d5824b58e4",
+  "active": "d7d044ef00035a69",
   "lastOpenFiles": [
+    "content/The Small Web.md",
+    "content/The Web Revival.md",
     "public/categories/internet/index.html",
     "public/categories/internet",
     "public/categories/thoughts/index.html",
@@ -177,7 +179,6 @@
     "public/the-web-revival/index.html",
     "public/the-web-revival",
     "content/_index.md",
-    "content/The Web Revival.md",
     "content/Note One.md",
     "img/IMG_4362.jpeg",
     "public/note-one/index.html",
@@ -186,7 +187,6 @@
     "content/Untitled.md",
     "public/index.html",
     "public/404.html",
-    "public/untitled/index.html",
     "public/img/IMG_4362.jpeg",
     "content/post/Post 1.md",
     "public/IMG_4362-min-2.jpeg",
