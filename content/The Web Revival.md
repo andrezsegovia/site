@@ -1,11 +1,11 @@
 ---
-title: "The Web Revival"
+title: The Web Revival
 date: 2025-03-06T21:24:14-05:00
 draft: false
 weight: 1
 categories:
- - Internet
- - Thoughts
+  - Internet
+  - Notes
 ---
 
 > Surfing the web is about going on an adventure, it's about clicking links and seeing where they go. You won't find Web Revival sites on typical search engines, you won't find them on social media sites and no algorithm will pick them out for you. To surf the Web Revival, you start on one site, you find links and you follow the trail; be brave, explore, keep going, keep going![^1]
