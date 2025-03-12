@@ -168,8 +168,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d7d044ef00035a69",
+  "active": "08744c5f3734f612",
   "lastOpenFiles": [
+    "layouts/_default/bookmark.html",
+    "layouts/_default/single copy.html",
+    "templates/Bookmark.md",
+    "templates/Basic copy.md",
     "content/An Introduction to the IndieWeb - Chris Aldrich.md",
     "content/Getting Started - IndieWeb.md",
     "content/Taking Back The Web.md",
@@ -186,7 +190,6 @@
     "public/the-small-web/index.html",
     "public/the-small-web",
     "public/categories/notes/index.html",
-    "public/categories/notes",
     "content/_index.md",
     "content/Note One.md",
     "img/IMG_4362.jpeg",

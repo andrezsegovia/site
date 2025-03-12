@@ -1,22 +1,41 @@
-<article class="post">
-    <header>
-        <h2><a href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+<article class="post h-entry">
+    {{$layout := .Type }}
+    {{if eq $layout "bookmark"}} 
+        <h2><a href="{{ .Params.bookmarkUrl }}" class="u-bookmark-of h-cite u-url p-name">{{ .Title }}</a></h2>
         <div class="post-meta">
-            Published on {{ .Date | time.Format ":date_long" }}
-            &#x2022;  
-            {{ .WordCount }} Words 
+            Published on <time class="dt-published" datetime='{{ .Date | time.Format "2006-01-02T15:04:05-07:00" }}'>{{ .Date | time.Format ":date_long" }}</time>
             {{ $categories := .GetTerms "categories" }}
             {{ if gt $categories.Len 0}}
                 &#x2022;
                 {{ range $categories}}
-                    <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+                    <a class="p-category" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
                 {{end}}
-
             {{ end}}
         </div>
-    </header>
-    {{ .Summary }}
-    <footer>
-        <a href='{{ .RelPermalink }}'>Read&nbsp;more&nbsp;&raquo;</a>
-    </footer>
+        <div class="p-summary">
+            {{ .Summary }}
+        </div>
+    {{else}}
+        <header>
+            <h2><a class="p-name u-url" href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
+            <div class="post-meta">
+                Published on <time class="dt-published" datetime='{{ .Date | time.Format "2006-01-02T15:04:05-07:00" }}'>{{ .Date | time.Format ":date_long" }}</time>
+                &#x2022;  
+                {{ .WordCount }} Words 
+                {{ $categories := .GetTerms "categories" }}
+                {{ if gt $categories.Len 0}}
+                    &#x2022;
+                    {{ range $categories}}
+                        <a class="p-category" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+                    {{end}}
+                {{ end}}
+            </div>
+        </header>
+        <div class="p-summary">
+            {{ .Summary }}
+        </div>
+        <footer>
+            <a class=""href='{{ .RelPermalink }}'>Read&nbsp;more&nbsp;&raquo;</a>
+        </footer>
+    {{ end }}
 </article>
