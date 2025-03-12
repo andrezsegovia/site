@@ -1,13 +1,13 @@
 {{ define "main" }}
-<section>
+<section class = "h-entry">
     <div class="header">
-        <h1 id="title">{{ .Title }}</h1>
+        <h1 id="title" class = "p-name">{{ .Title }}</h1>
         <div class="subtitle">
             <label id="published-on">
                 {{ with .Date }}
                 {{ $dateMachine := . | time.Format "2006-01-02T15:04:05-07:00" }}
                 {{ $dateHuman := . | time.Format ":date_long" }}
-                Published on <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+                Published on <time datetime="{{ $dateMachine }}" class = "dt-published">{{ $dateHuman }}</time>
                 {{ end }}
             </label>
             &#x2022;
@@ -15,23 +15,22 @@
                 {{ with .Lastmod }}
                 {{ $dateMachine := . | time.Format "2006-01-02T15:04:05-07:00" }}
                 {{ $dateHuman := . | time.Format ":date_long" }}
-                Updated on <time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time>
+                Updated on <time datetime="{{ $dateMachine }}" class = "dt-updated">{{ $dateHuman }}</time>
                 {{ end }}
             </label>
             &#x2022;
             <label>{{ .WordCount }} Words </label>
         </div>
     </div>
-    <article>
+    <article class="e-content">
         {{ .Content }}
     </article>
     <aside id="category-list">
         {{ with .GetTerms "categories" }}
         {{ range . }}
-        <a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
+        <a href="{{ .RelPermalink }}" class="p-category">{{ .LinkTitle }}</a>
         {{ end }}
         {{ end }}
     </aside>
-
 </section>
 {{ end }}
