@@ -6,16 +6,20 @@ header nav a:link {
     font-size: 16px;
 }
 
-.post header h2 {
-    padding-bottom: 0;
-    margin-bottom: 0;
+.post {
+    padding: 15px 0px 30px 0;
 }
 
-.post header h2 a:link {
+.post h2 {
+    padding: 0;
+    margin: 0;
+}
+
+.post a:link {
     text-decoration: none;
 }
 
-.post header .post-meta {
+.post .post-meta {
     font-size: 14px;
 }
 
@@ -42,4 +46,17 @@ header nav a:link {
 
 .hidden {
     display: none;
+}
+
+.main-menu {
+    border-style: solid none;
+    border-width: 1px;
+    padding: 15px 0px 15px 0px;
+}
+
+.separator {
+    width: 5%; /* Adjust the width as needed */
+    margin: 10px auto; /* Centers the line and adds spacing */
+    border: none; /* Removes default styling */
+    border-top: 2px solid; /* Creates a short solid line */
 }

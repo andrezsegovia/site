@@ -1,3 +1,5 @@
-{{ range .Site.Menus.main.ByWeight }}
-  <a href="{{ .URL }}">{{ .Name }}</a>
-{{ end }}
+<div class="main-menu">
+  {{ range .Site.Menus.main.ByWeight }}
+    <a href="{{ .URL }}">{{ upper .Name }}</a>
+    {{ end }}
+</div>

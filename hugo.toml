@@ -37,7 +37,7 @@ ignoreFiles = ['content/templates', 'content/.obsidian']
 
 [menus]
   [[menus.main]]
-    name = 'All Categories'
+    name = 'Categories'
     pageRef = '/categories'
     weight = 11
 
