@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Taking Back The Web.md",
+                "file": "content/_index.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Taking Back The Web"
+              "title": "_index"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/Taking Back The Web.md",
+                "file": "content/_index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Taking Back The Web"
+              "title": "Backlinks for _index"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/Taking Back The Web.md",
+                "file": "content/_index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Taking Back The Web"
+              "title": "Outgoing links from _index"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/Taking Back The Web.md",
+                "file": "content/_index.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Taking Back The Web"
+              "title": "Outline of _index"
             }
           }
         ]
@@ -170,25 +170,27 @@
   },
   "active": "d7d044ef00035a69",
   "lastOpenFiles": [
-    "content/The IndieWeb.md",
+    "content/An Introduction to the IndieWeb - Chris Aldrich.md",
+    "content/Getting Started - IndieWeb.md",
     "content/Taking Back The Web.md",
-    "content/The Web Revival.md",
+    "content/The IndieWeb.md",
     "content/The Small Web.md",
-    "public/categories/internet/index.html",
-    "public/categories/internet",
-    "public/categories/thoughts/index.html",
-    "public/categories/thoughts",
-    "public/the-web-revival/index.html",
-    "public/the-web-revival",
+    "content/The Web Revival.md",
+    "public/an-introduction-to-the-indieweb---chris-aldrich/index.html",
+    "public/an-introduction-to-the-indieweb---chris-aldrich",
+    "public/categories/bookmarks/index.html",
+    "public/categories/bookmarks",
+    "public/getting-started---indieweb/index.html",
+    "public/getting-started---indieweb",
+    "archetypes/default.md",
+    "public/the-small-web/index.html",
+    "public/the-small-web",
+    "public/categories/notes/index.html",
+    "public/categories/notes",
     "content/_index.md",
     "content/Note One.md",
     "img/IMG_4362.jpeg",
-    "public/note-one/index.html",
-    "public/note-one",
     "templates/Basic.md",
-    "content/Untitled.md",
-    "public/index.html",
-    "public/404.html",
     "public/img/IMG_4362.jpeg",
     "content/post/Post 1.md",
     "public/IMG_4362-min-2.jpeg",
