@@ -39,3 +39,7 @@ header nav a:link {
 .header  .subtitle {
     font-size: 14px;
 }
+
+.hidden {
+    display: none;
+}
