@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/How to make square stock straight, smooth and square (stock preparation part 1) - Paul Sellers.md",
+                "file": "content/Sharpening and Setting the Bench Plane - Paul Sellers.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "How to make square stock straight, smooth and square (stock preparation part 1) - Paul Sellers"
+              "title": "Sharpening and Setting the Bench Plane - Paul Sellers"
             }
           }
         ]
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/How to make square stock straight, smooth and square (stock preparation part 1) - Paul Sellers.md",
+                "file": "content/Sharpening and Setting the Bench Plane - Paul Sellers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for How to make square stock straight, smooth and square (stock preparation part 1) - Paul Sellers"
+              "title": "Backlinks for Sharpening and Setting the Bench Plane - Paul Sellers"
             }
           },
           {
@@ -113,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/How to make square stock straight, smooth and square (stock preparation part 1) - Paul Sellers.md",
+                "file": "content/Sharpening and Setting the Bench Plane - Paul Sellers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from How to make square stock straight, smooth and square (stock preparation part 1) - Paul Sellers"
+              "title": "Outgoing links from Sharpening and Setting the Bench Plane - Paul Sellers"
             }
           },
           {
@@ -142,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/How to make square stock straight, smooth and square (stock preparation part 1) - Paul Sellers.md",
+                "file": "content/Sharpening and Setting the Bench Plane - Paul Sellers.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of How to make square stock straight, smooth and square (stock preparation part 1) - Paul Sellers"
+              "title": "Outline of Sharpening and Setting the Bench Plane - Paul Sellers"
             }
           }
         ]
@@ -170,27 +170,31 @@
   },
   "active": "d7d044ef00035a69",
   "lastOpenFiles": [
+    "public/the-web-revival/index.html",
+    "public/the-web-revival",
+    "public/the-small-web/index.html",
+    "public/the-small-web",
+    "public/index.html",
+    "public/links/index.html",
+    "public/links",
+    "public/taking-back-the-web/index.html",
+    "public/taking-back-the-web",
+    "public/what-is-japanese-woodworking---an-introduction---studio-no-ha/index.html",
+    "public/what-is-japanese-woodworking---an-introduction---studio-no-ha",
+    "content/Small Techonology Principles - small-tech.org.md",
+    "content/Complete course on how to use a hand plane, ideal for beginners - Carpinteria Chavez.md",
+    "content/Sharpening and Setting the Bench Plane - Paul Sellers.md",
+    "content/How to make square stock straight, smooth and square (stock preparation part 1) - Paul Sellers.md",
     "content/What is Japanese Woodworking - An Introduction - Studio No Ha.md",
     "templates/Bookmark.md",
     "content/Getting Started - IndieWeb.md",
     "content/An Introduction to the IndieWeb - Chris Aldrich.md",
-    "content/How to make square stock straight, smooth and square (stock preparation part 1) - Paul Sellers.md",
     "content/Taking Back The Web.md",
     "content/The IndieWeb.md",
     "content/The Small Web.md",
     "content/The Web Revival.md",
-    "public/what-is-japanese-woodworking---an-introduction---studio-no-ha/index.html",
-    "public/what-is-japanese-woodworking---an-introduction---studio-no-ha",
-    "public/how-to-make-square-stock-straight-smooth-and-square-stock-preparation-part-1---paul-sellers/index.html",
-    "public/how-to-make-square-stock-straight-smooth-and-square-stock-preparation-part-1---paul-sellers",
-    "public/categories/woodworking/index.html",
-    "public/categories/woodworking",
     "content/_index.md",
-    "layouts/links/list.html",
-    "layouts/links",
-    "content/categories",
     "content/links/_index.md",
-    "public/links/index.html",
     "templates/Basic copy.md",
     "archetypes/default.md",
     "content/Note One.md",
