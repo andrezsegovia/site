@@ -27,9 +27,9 @@
     </article>
     <aside id="category-list">
         {{ with .GetTerms "categories" }}
-        {{ range . }}
-        <a href="{{ .RelPermalink }}" class="p-category">{{ .LinkTitle }}</a>
-        {{ end }}
+            {{ range .ByTitle }}
+                <a href="{{ .RelPermalink }}" class="p-category">#{{ .LinkTitle }}</a>
+            {{ end }}
         {{ end }}
     </aside>
     <div class="hidden">

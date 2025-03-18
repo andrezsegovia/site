@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "cd001b3e1464dd1c",
+        "id": "465b6b7b52a6ec02",
         "type": "tabs",
         "children": [
           {
-            "id": "d7d044ef00035a69",
+            "id": "fdcaf3edc72e6a51",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "content/Sharpening and Setting the Bench Plane - Paul Sellers.md",
-                "mode": "source",
-                "source": true
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Sharpening and Setting the Bench Plane - Paul Sellers"
+              "title": "New tab"
             }
           }
         ]
@@ -94,7 +90,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/Sharpening and Setting the Bench Plane - Paul Sellers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +99,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Sharpening and Setting the Bench Plane - Paul Sellers"
+              "title": "Backlinks"
             }
           },
           {
@@ -113,12 +108,11 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/Sharpening and Setting the Bench Plane - Paul Sellers.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Sharpening and Setting the Bench Plane - Paul Sellers"
+              "title": "Outgoing links"
             }
           },
           {
@@ -142,13 +136,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/Sharpening and Setting the Bench Plane - Paul Sellers.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Sharpening and Setting the Bench Plane - Paul Sellers"
+              "title": "Outline"
             }
           }
         ]
@@ -168,22 +161,25 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d7d044ef00035a69",
+  "active": "fdcaf3edc72e6a51",
   "lastOpenFiles": [
     "public/the-web-revival/index.html",
     "public/the-web-revival",
     "public/the-small-web/index.html",
     "public/the-small-web",
-    "public/index.html",
-    "public/links/index.html",
-    "public/links",
     "public/taking-back-the-web/index.html",
     "public/taking-back-the-web",
+    "public/links/index.html",
+    "public/links",
+    "public/sharpening-and-setting-the-bench-plane---paul-sellers/index.html",
+    "public/sharpening-and-setting-the-bench-plane---paul-sellers",
     "public/what-is-japanese-woodworking---an-introduction---studio-no-ha/index.html",
-    "public/what-is-japanese-woodworking---an-introduction---studio-no-ha",
+    "content/Get flat boards EVERY TIME with this simple process. (Handtool stock-prep.) - Rex Krueger.md",
+    "content/Sharpening and Setting the Bench Plane - Paul Sellers.md",
+    "Get flat boards EVERY TIME with this simple process. / Handtool stock-prep..md",
+    "CO                                                                                                                                 Get flat boards EVERY TIME with this simple process. / Handtool stock-prep..md",
     "content/Small Techonology Principles - small-tech.org.md",
     "content/Complete course on how to use a hand plane, ideal for beginners - Carpinteria Chavez.md",
-    "content/Sharpening and Setting the Bench Plane - Paul Sellers.md",
     "content/How to make square stock straight, smooth and square (stock preparation part 1) - Paul Sellers.md",
     "content/What is Japanese Woodworking - An Introduction - Studio No Ha.md",
     "templates/Bookmark.md",

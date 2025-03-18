@@ -4,7 +4,7 @@
         <div class="post-meta">
             {{ $categories := .GetTerms "categories" }}
             {{ if gt $categories.Len 0}}
-                {{ range $categories}}
+                {{ range $categories.ByTitle }}
                     <a class="p-category" href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a>
                 {{end}}
             {{ end}}
@@ -21,7 +21,7 @@
             <div class="post-meta">
                 {{ $categories := .GetTerms "categories" }}
                 {{ if gt $categories.Len 0}}
-                    {{ range $categories}}
+                    {{ range $categories.ByTitle }}
                         <a class="p-category" href="{{ .RelPermalink }}">#{{ .LinkTitle }}</a>
                     {{end}}
                 {{ end}}
