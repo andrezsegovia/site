@@ -11,10 +11,14 @@
             "id": "fdcaf3edc72e6a51",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "content/Find All Letters Event Grave And Acute Ones With a Regular Expression.md",
+                "mode": "source",
+                "source": true
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Find All Letters Event Grave And Acute Ones With a Regular Expression"
             }
           }
         ]
@@ -90,6 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "content/Find All Letters Event Grave And Acute Ones With a Regular Expression.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -99,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks"
+              "title": "Backlinks for Find All Letters Event Grave And Acute Ones With a Regular Expression"
             }
           },
           {
@@ -108,11 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "content/Find All Letters Event Grave And Acute Ones With a Regular Expression.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links"
+              "title": "Outgoing links from Find All Letters Event Grave And Acute Ones With a Regular Expression"
             }
           },
           {
@@ -136,12 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
+                "file": "content/Find All Letters Event Grave And Acute Ones With a Regular Expression.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline"
+              "title": "Outline of Find All Letters Event Grave And Acute Ones With a Regular Expression"
             }
           }
         ]
@@ -163,6 +170,7 @@
   },
   "active": "fdcaf3edc72e6a51",
   "lastOpenFiles": [
+    "content/Find All Letters Event Grave And Acute Ones With a Regular Expression.md",
     "public/favicon.ico",
     "static/favicon.ico",
     "public/index.html",
@@ -173,7 +181,6 @@
     "public/links/index.html",
     "public/links",
     "public/what-is-japanese-woodworking---an-introduction---studio-no-ha/index.html",
-    "public/what-is-japanese-woodworking---an-introduction---studio-no-ha",
     "content/Get flat boards EVERY TIME with this simple process. (Handtool stock-prep.) - Rex Krueger.md",
     "content/Sharpening and Setting the Bench Plane - Paul Sellers.md",
     "Get flat boards EVERY TIME with this simple process. / Handtool stock-prep..md",
