@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Find All Letters Event Grave And Acute Ones With a Regular Expression.md",
-                "mode": "source",
+                "file": "content/The differences between List.of and Arrays.asList.md",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Find All Letters Event Grave And Acute Ones With a Regular Expression"
+              "title": "The differences between List.of and Arrays.asList"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "ee962ace047519b5",
@@ -171,6 +172,7 @@
   "active": "fdcaf3edc72e6a51",
   "lastOpenFiles": [
     "content/Find All Letters Event Grave And Acute Ones With a Regular Expression.md",
+    "content/The differences between List.of and Arrays.asList.md",
     "public/favicon.ico",
     "static/favicon.ico",
     "public/index.html",
