@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/The Importance of a Brag Document.md",
+                "file": "content/How To Use Apollo Kotlin in Java Projects.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "The Importance of a Brag Document"
+              "title": "How To Use Apollo Kotlin in Java Projects"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "ee962ace047519b5",
@@ -94,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/The Importance of a Brag Document.md",
+                "file": "content/Find All Letters Event Grave And Acute Ones With a Regular Expression.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for The Importance of a Brag Document"
+              "title": "Backlinks for Find All Letters Event Grave And Acute Ones With a Regular Expression"
             }
           },
           {
@@ -113,12 +114,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/The Importance of a Brag Document.md",
+                "file": "content/Find All Letters Event Grave And Acute Ones With a Regular Expression.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from The Importance of a Brag Document"
+              "title": "Outgoing links from Find All Letters Event Grave And Acute Ones With a Regular Expression"
             }
           },
           {
@@ -142,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/The Importance of a Brag Document.md",
+                "file": "content/Find All Letters Event Grave And Acute Ones With a Regular Expression.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of The Importance of a Brag Document"
+              "title": "Outline of Find All Letters Event Grave And Acute Ones With a Regular Expression"
             }
           }
         ]
@@ -170,10 +171,9 @@
   },
   "active": "fdcaf3edc72e6a51",
   "lastOpenFiles": [
-    "content/The Small Web.md",
-    "content/The IndieWeb.md",
     "content/The Importance of a Brag Document.md",
     "content/The differences between List.of and Arrays.asList.md",
+    "content/How To Use Apollo Kotlin in Java Projects.md",
     "content/Find All Letters Event Grave And Acute Ones With a Regular Expression.md",
     "public/favicon.ico",
     "static/favicon.ico",
@@ -197,6 +197,8 @@
     "content/Getting Started - IndieWeb.md",
     "content/An Introduction to the IndieWeb - Chris Aldrich.md",
     "content/Taking Back The Web.md",
+    "content/The IndieWeb.md",
+    "content/The Small Web.md",
     "content/The Web Revival.md",
     "content/_index.md",
     "content/links/_index.md",
@@ -212,7 +214,6 @@
     "public/IMG_4362.jpeg",
     "content/IMG_4362.jpeg",
     "public/attachments/IMG_4362-min-2.jpeg",
-    "assets/Untitled.md",
     "assets/images/IMG_4362-min-2.jpeg",
     "static/static/IMG_4362.jpeg",
     "public/static/IMG_4362.jpeg"
