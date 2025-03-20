@@ -13,15 +13,28 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/How To Use Apollo Kotlin in Java Projects.md",
+                "file": "content/Jrnl CLI for Note-Taking.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "How To Use Apollo Kotlin in Java Projects"
+              "title": "Jrnl CLI for Note-Taking"
+            }
+          },
+          {
+            "id": "e037d10e6522f658",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.8.9"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.8.9"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,8 +91,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "ee962ace047519b5",
@@ -95,7 +107,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/Find All Letters Event Grave And Acute Ones With a Regular Expression.md",
+                "file": "content/Jrnl CLI for Note-Taking.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +117,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Find All Letters Event Grave And Acute Ones With a Regular Expression"
+              "title": "Backlinks for Jrnl CLI for Note-Taking"
             }
           },
           {
@@ -114,12 +126,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/Find All Letters Event Grave And Acute Ones With a Regular Expression.md",
+                "file": "content/Jrnl CLI for Note-Taking.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Find All Letters Event Grave And Acute Ones With a Regular Expression"
+              "title": "Outgoing links from Jrnl CLI for Note-Taking"
             }
           },
           {
@@ -143,13 +155,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/Find All Letters Event Grave And Acute Ones With a Regular Expression.md",
+                "file": "content/Jrnl CLI for Note-Taking.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Find All Letters Event Grave And Acute Ones With a Regular Expression"
+              "title": "Outline of Jrnl CLI for Note-Taking"
             }
           }
         ]
@@ -169,11 +181,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fdcaf3edc72e6a51",
+  "active": "e037d10e6522f658",
   "lastOpenFiles": [
-    "content/The Importance of a Brag Document.md",
-    "content/The differences between List.of and Arrays.asList.md",
+    "content/A Single Text File Is My Productivity Hack - Alejandro Garcia.md",
+    "content/Jrnl CLI for Note-Taking.md",
+    "content/My Simple Knowledge Management and Time Tracking System - Henrik Warne.md",
+    "content/Why I Love Coding - Henrik Warne.md",
     "content/How To Use Apollo Kotlin in Java Projects.md",
+    "content/The Importance of a Brag Document.md",
+    "content/The Small Web.md",
+    "content/The IndieWeb.md",
+    "content/The differences between List.of and Arrays.asList.md",
     "content/Find All Letters Event Grave And Acute Ones With a Regular Expression.md",
     "public/favicon.ico",
     "static/favicon.ico",
@@ -197,18 +215,12 @@
     "content/Getting Started - IndieWeb.md",
     "content/An Introduction to the IndieWeb - Chris Aldrich.md",
     "content/Taking Back The Web.md",
-    "content/The IndieWeb.md",
-    "content/The Small Web.md",
     "content/The Web Revival.md",
     "content/_index.md",
     "content/links/_index.md",
     "templates/Basic copy.md",
-    "archetypes/default.md",
-    "content/Note One.md",
     "img/IMG_4362.jpeg",
-    "templates/Basic.md",
     "public/img/IMG_4362.jpeg",
-    "content/post/Post 1.md",
     "public/IMG_4362-min-2.jpeg",
     "assets/IMG_4362-min-2.jpeg",
     "public/IMG_4362.jpeg",
