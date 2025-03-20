@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/The differences between List.of and Arrays.asList.md",
-                "mode": "preview",
+                "file": "content/The Importance of a Brag Document.md",
+                "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "The differences between List.of and Arrays.asList"
+              "title": "The Importance of a Brag Document"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "ee962ace047519b5",
@@ -95,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/Find All Letters Event Grave And Acute Ones With a Regular Expression.md",
+                "file": "content/The Importance of a Brag Document.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Find All Letters Event Grave And Acute Ones With a Regular Expression"
+              "title": "Backlinks for The Importance of a Brag Document"
             }
           },
           {
@@ -114,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/Find All Letters Event Grave And Acute Ones With a Regular Expression.md",
+                "file": "content/The Importance of a Brag Document.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Find All Letters Event Grave And Acute Ones With a Regular Expression"
+              "title": "Outgoing links from The Importance of a Brag Document"
             }
           },
           {
@@ -143,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/Find All Letters Event Grave And Acute Ones With a Regular Expression.md",
+                "file": "content/The Importance of a Brag Document.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Find All Letters Event Grave And Acute Ones With a Regular Expression"
+              "title": "Outline of The Importance of a Brag Document"
             }
           }
         ]
@@ -171,8 +170,11 @@
   },
   "active": "fdcaf3edc72e6a51",
   "lastOpenFiles": [
-    "content/Find All Letters Event Grave And Acute Ones With a Regular Expression.md",
+    "content/The Small Web.md",
+    "content/The IndieWeb.md",
+    "content/The Importance of a Brag Document.md",
     "content/The differences between List.of and Arrays.asList.md",
+    "content/Find All Letters Event Grave And Acute Ones With a Regular Expression.md",
     "public/favicon.ico",
     "static/favicon.ico",
     "public/index.html",
@@ -195,8 +197,6 @@
     "content/Getting Started - IndieWeb.md",
     "content/An Introduction to the IndieWeb - Chris Aldrich.md",
     "content/Taking Back The Web.md",
-    "content/The IndieWeb.md",
-    "content/The Small Web.md",
     "content/The Web Revival.md",
     "content/_index.md",
     "content/links/_index.md",
