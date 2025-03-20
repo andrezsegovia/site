@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/How To Use Apollo Kotlin in Java Projects.md",
+                "file": "content/Why I Love Coding - Henrik Warne.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "How To Use Apollo Kotlin in Java Projects"
+              "title": "Why I Love Coding - Henrik Warne"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "ee962ace047519b5",
@@ -95,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/Find All Letters Event Grave And Acute Ones With a Regular Expression.md",
+                "file": "content/Why I Love Coding - Henrik Warne.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,7 +104,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Find All Letters Event Grave And Acute Ones With a Regular Expression"
+              "title": "Backlinks for Why I Love Coding - Henrik Warne"
             }
           },
           {
@@ -114,12 +113,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/Find All Letters Event Grave And Acute Ones With a Regular Expression.md",
+                "file": "content/Why I Love Coding - Henrik Warne.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Find All Letters Event Grave And Acute Ones With a Regular Expression"
+              "title": "Outgoing links from Why I Love Coding - Henrik Warne"
             }
           },
           {
@@ -143,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/Find All Letters Event Grave And Acute Ones With a Regular Expression.md",
+                "file": "content/Why I Love Coding - Henrik Warne.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Find All Letters Event Grave And Acute Ones With a Regular Expression"
+              "title": "Outline of Why I Love Coding - Henrik Warne"
             }
           }
         ]
@@ -171,9 +170,12 @@
   },
   "active": "fdcaf3edc72e6a51",
   "lastOpenFiles": [
-    "content/The Importance of a Brag Document.md",
-    "content/The differences between List.of and Arrays.asList.md",
     "content/How To Use Apollo Kotlin in Java Projects.md",
+    "content/The Importance of a Brag Document.md",
+    "content/Why I Love Coding - Henrik Warne.md",
+    "content/The Small Web.md",
+    "content/The IndieWeb.md",
+    "content/The differences between List.of and Arrays.asList.md",
     "content/Find All Letters Event Grave And Acute Ones With a Regular Expression.md",
     "public/favicon.ico",
     "static/favicon.ico",
@@ -197,8 +199,6 @@
     "content/Getting Started - IndieWeb.md",
     "content/An Introduction to the IndieWeb - Chris Aldrich.md",
     "content/Taking Back The Web.md",
-    "content/The IndieWeb.md",
-    "content/The Small Web.md",
     "content/The Web Revival.md",
     "content/_index.md",
     "content/links/_index.md",
@@ -208,7 +208,6 @@
     "img/IMG_4362.jpeg",
     "templates/Basic.md",
     "public/img/IMG_4362.jpeg",
-    "content/post/Post 1.md",
     "public/IMG_4362-min-2.jpeg",
     "assets/IMG_4362-min-2.jpeg",
     "public/IMG_4362.jpeg",
