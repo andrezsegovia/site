@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Why I Love Coding - Henrik Warne.md",
+                "file": "content/Formatting JSON returned by cURL in the Terminal.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Why I Love Coding - Henrik Warne"
+              "title": "Formatting JSON returned by cURL in the Terminal"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "ee962ace047519b5",
@@ -94,7 +95,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "content/Why I Love Coding - Henrik Warne.md",
+                "file": "content/Find All Letters Event Grave And Acute Ones With a Regular Expression.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -104,7 +105,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Backlinks for Why I Love Coding - Henrik Warne"
+              "title": "Backlinks for Find All Letters Event Grave And Acute Ones With a Regular Expression"
             }
           },
           {
@@ -113,12 +114,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "content/Why I Love Coding - Henrik Warne.md",
+                "file": "content/Find All Letters Event Grave And Acute Ones With a Regular Expression.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Outgoing links from Why I Love Coding - Henrik Warne"
+              "title": "Outgoing links from Find All Letters Event Grave And Acute Ones With a Regular Expression"
             }
           },
           {
@@ -142,13 +143,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "content/Why I Love Coding - Henrik Warne.md",
+                "file": "content/Find All Letters Event Grave And Acute Ones With a Regular Expression.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Outline of Why I Love Coding - Henrik Warne"
+              "title": "Outline of Find All Letters Event Grave And Acute Ones With a Regular Expression"
             }
           }
         ]
@@ -170,12 +171,11 @@
   },
   "active": "fdcaf3edc72e6a51",
   "lastOpenFiles": [
-    "content/How To Use Apollo Kotlin in Java Projects.md",
-    "content/The Importance of a Brag Document.md",
     "content/Why I Love Coding - Henrik Warne.md",
-    "content/The Small Web.md",
-    "content/The IndieWeb.md",
+    "content/How To Use Apollo Kotlin in Java Projects.md",
+    "content/Formatting JSON returned by cURL in the Terminal.md",
     "content/The differences between List.of and Arrays.asList.md",
+    "content/The Importance of a Brag Document.md",
     "content/Find All Letters Event Grave And Acute Ones With a Regular Expression.md",
     "public/favicon.ico",
     "static/favicon.ico",
@@ -199,6 +199,8 @@
     "content/Getting Started - IndieWeb.md",
     "content/An Introduction to the IndieWeb - Chris Aldrich.md",
     "content/Taking Back The Web.md",
+    "content/The IndieWeb.md",
+    "content/The Small Web.md",
     "content/The Web Revival.md",
     "content/_index.md",
     "content/links/_index.md",
@@ -206,7 +208,6 @@
     "archetypes/default.md",
     "content/Note One.md",
     "img/IMG_4362.jpeg",
-    "templates/Basic.md",
     "public/img/IMG_4362.jpeg",
     "public/IMG_4362-min-2.jpeg",
     "assets/IMG_4362-min-2.jpeg",
