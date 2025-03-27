@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "465b6b7b52a6ec02",
+        "id": "53d27f6693594c02",
         "type": "tabs",
         "children": [
           {
-            "id": "fdcaf3edc72e6a51",
+            "id": "d1452d5e551c761a",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Formatting JSON returned by cURL in the Terminal.md",
-                "mode": "source",
+                "file": "content/Validate the arguments passed to a method.md",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Formatting JSON returned by cURL in the Terminal"
+              "title": "Validate the arguments passed to a method"
             }
           }
         ]
@@ -169,11 +169,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "fdcaf3edc72e6a51",
+  "active": "d1452d5e551c761a",
   "lastOpenFiles": [
+    "content/Validate the arguments passed to a method.md",
+    "content/Formatting JSON returned by cURL in the Terminal.md",
     "content/Why I Love Coding - Henrik Warne.md",
     "content/How To Use Apollo Kotlin in Java Projects.md",
-    "content/Formatting JSON returned by cURL in the Terminal.md",
     "content/The differences between List.of and Arrays.asList.md",
     "content/The Importance of a Brag Document.md",
     "content/Find All Letters Event Grave And Acute Ones With a Regular Expression.md",
@@ -206,7 +207,6 @@
     "content/links/_index.md",
     "templates/Basic copy.md",
     "archetypes/default.md",
-    "content/Note One.md",
     "img/IMG_4362.jpeg",
     "public/img/IMG_4362.jpeg",
     "public/IMG_4362-min-2.jpeg",
