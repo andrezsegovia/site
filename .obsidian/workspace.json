@@ -13,28 +13,15 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/Jrnl CLI for Note-Taking.md",
+                "file": "content/links/_index.md",
                 "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "Jrnl CLI for Note-Taking"
-            }
-          },
-          {
-            "id": "e037d10e6522f658",
-            "type": "leaf",
-            "state": {
-              "type": "release-notes",
-              "state": {
-                "currentVersion": "1.8.9"
-              },
-              "icon": "lucide-book-up",
-              "title": "Release Notes 1.8.9"
+              "title": "_index"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -181,12 +168,13 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "e037d10e6522f658",
+  "active": "fdcaf3edc72e6a51",
   "lastOpenFiles": [
+    "content/_index.md",
+    "content/Jrnl CLI for Note-Taking.md",
     "content/Validate the arguments passed to a method.md",
     "content/Formatting JSON returned by cURL in the Terminal.md",
     "content/A Single Text File Is My Productivity Hack - Alejandro Garcia.md",
-    "content/Jrnl CLI for Note-Taking.md",
     "content/My Simple Knowledge Management and Time Tracking System - Henrik Warne.md",
     "content/Why I Love Coding - Henrik Warne.md",
     "content/How To Use Apollo Kotlin in Java Projects.md",
@@ -218,7 +206,6 @@
     "content/An Introduction to the IndieWeb - Chris Aldrich.md",
     "content/Taking Back The Web.md",
     "content/The Web Revival.md",
-    "content/_index.md",
     "img/IMG_4362.jpeg",
     "public/img/IMG_4362.jpeg",
     "public/IMG_4362-min-2.jpeg",

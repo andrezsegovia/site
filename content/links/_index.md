@@ -13,3 +13,4 @@ menu: main
 - [Gwern Branwen](https://gwern.net/)
 - [Flavio Copes](https://flaviocopes.com/)
 - [Julia Evans](https://jvns.ca/)
+- [Simon Willison](https://simonwillison.net/)
