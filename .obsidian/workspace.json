@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "spring",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,8 @@
               "title": "Bookmarks"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -170,6 +171,7 @@
   },
   "active": "fdcaf3edc72e6a51",
   "lastOpenFiles": [
+    "content/Working with Beans in Spring Framework.md",
     "content/March 27, 2025.md",
     "content/How To Use Apollo Kotlin in Java Projects.md",
     "content/How to make square stock straight, smooth and square (stock preparation part 1) - Paul Sellers.md",
@@ -205,7 +207,6 @@
     "CO                                                                                                                                 Get flat boards EVERY TIME with this simple process. / Handtool stock-prep..md",
     "content/Small Techonology Principles - small-tech.org.md",
     "content/What is Japanese Woodworking - An Introduction - Studio No Ha.md",
-    "templates/Bookmark.md",
     "img/IMG_4362.jpeg",
     "public/img/IMG_4362.jpeg",
     "public/IMG_4362-min-2.jpeg",
