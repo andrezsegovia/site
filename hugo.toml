@@ -8,7 +8,6 @@ defaultContentLanguage = 'en'
 languageCode = 'en-us'
 
 summaryLength = 10
-disableKinds = ['rss']
 
 enableGitInfo = true
 
@@ -51,6 +50,13 @@ ignoreFiles = ['content/templates', 'content/.obsidian']
 [[module.mounts]]
   source = 'img'
   target = 'static/img'
+
+# RSS Configuration
+[outputs]
+  home = ['html', 'rss']
+  section = ['html']
+  taxonomy = ['html']
+  term = ['html', 'rss']
 
 
 
