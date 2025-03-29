@@ -171,6 +171,7 @@
   },
   "active": "fdcaf3edc72e6a51",
   "lastOpenFiles": [
+    "layouts/_default/rss.xml",
     "public/categories/til/index.xml",
     "public/index.xml",
     "public/categories/woodworking/index.xml",
@@ -181,7 +182,6 @@
     "public/categories/notes/index.xml",
     "public/categories/terminal/index.xml",
     "public/categories/career/index.xml",
-    "public/categories/programming/index.xml",
     "content/Taking Back The Web.md",
     "content/The Importance of a Brag Document.md",
     "content/Working with Beans in Spring Framework.md",
