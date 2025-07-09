@@ -6,44 +6,10 @@ weight: 1
 categories:
  - Book Highlights
 ---
-- [Parte I: Mente](#Parte%20I:%20Mente)
-	- [El ámbito de la mente](#El%20%C3%A1mbito%20de%20la%20mente)
-	- [Está presente](#Est%C3%A1%20presente)
-	- [Limita tus entradas de datos](#Limita%20tus%20entradas%20de%20datos)
-	- [Vacía tu cabeza](#Vac%C3%ADa%20tu%20cabeza)
-	- [Serénate y piensa a fondo](#Ser%C3%A9nate%20y%20piensa%20a%20fondo)
-	- [Lleva tu diario](#Lleva%20tu%20diario)
-	- [Cultiva el silencio](#Cultiva%20el%20silencio)
-	- [Persigue la sabiduría](#Persigue%20la%20sabidur%C3%ADa)
-	- [Busca la seguridad en ti mismo, evita el ego](#Busca%20la%20seguridad%20en%20ti%20mismo,%20evita%20el%20ego)
-	- [Suéltate](#Su%C3%A9ltate)
-	- [Sobre lo que sigue](#Sobre%20lo%20que%20sigue)
-- [Parte II: El Espíritu](#Parte%20II:%20El%20Esp%C3%ADritu)
-	- [El ámbito del espíritu](#El%20%C3%A1mbito%20del%20esp%C3%ADritu)
-	- [Elige la virtud](#Elige%20la%20virtud)
-	- [Sana a tu niño interior](#Sana%20a%20tu%20ni%C3%B1o%20interior)
-	- [Cuídate del deseo](#Cu%C3%ADdate%20del%20deseo)
-	- [¡Basta!](#%C2%A1Basta!)
-	- [Báñate en la belleza](#B%C3%A1%C3%B1ate%20en%20la%20belleza)
-	- [Acepta un poder superior](#Acepta%20un%20poder%20superior)
-	- [Forja relaciones](#Forja%20relaciones)
-	- [Vence la ira](#Vence%20la%20ira)
-	- [Todos somo uno](#Todos%20somo%20uno)
-	- [Sobre los que sigue](#Sobre%20los%20que%20sigue)
-- [Parte III: El Cuerpo](#Parte%20III:%20El%20Cuerpo)
-	- [El ámbito del cuerpo](#El%20%C3%A1mbito%20del%20cuerpo)
-	- [Di que no](#Di%20que%20no)
-	- [Da un paseo](#Da%20un%20paseo)
-	- [Establece un rutina](#Establece%20un%20rutina)
-	- [Deshazte de cosas](#Deshazte%20de%20cosas)
-	- [Busca la soledad](#Busca%20la%20soledad)
-	- [Sé un ser humano](#S%C3%A9%20un%20ser%20humano)
-	- [Ve a dormir](#Ve%20a%20dormir)
-	- [Busca un pasatiempo](#Busca%20un%20pasatiempo)
-	- [Cuídate del escapismo](#Cu%C3%ADdate%20del%20escapismo)
-	- [Actúa con valentía](#Act%C3%BAa%20con%20valent%C3%ADa)
-	- [Sobre el último acto](#Sobre%20el%20%C3%BAltimo%20acto)
 
+- [Parte I: Mente](#Parte%20I%20Mente)
+- [Parte III: El Cuerpo](#Parte%20III%20El%20Cuerpo)
+- [Parte II: El Espíritu](#Parte%20II%20El%20Espíritu)
 
 Todos los problemas de la humanidad se deben a que el hombre es incapaz de permanecer callado en una habitación. - Blaise Pascal en 1654
 
@@ -70,6 +36,7 @@ Entre menos energía desperdiciemos en lamentar el pasado o preocuparnos por el 
 No rechaces un momento difícil o aburrido porque no es como quisieras. No pierdas un momento hermoso porque eres tímido o inseguro. Haz lo que puedas con lo se te ha dado. Vive lo que puede vivirse. Esto es la excelencia. Lo que la presencia hace posible. 
 
 [...] nadie puede hacer su mejor esfuerzo si su mente está en otra parte.
+
 ### Limita tus entradas de datos
 
 "La abundancia de información genera escasez de atención." — Herbert Simon.
