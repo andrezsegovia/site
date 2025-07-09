@@ -7,6 +7,46 @@ categories:
  - Book Highlights
 ---
 
+- [[#Parte I: Mente|Parte I: Mente]]
+	- [[#Parte I: Mente#El ámbito de la mente|El ámbito de la mente]]
+	- [[#Parte I: Mente#Está presente|Está presente]]
+	- [[#Parte I: Mente#Limita tus entradas de datos|Limita tus entradas de datos]]
+	- [[#Parte I: Mente#Vacía tu cabeza|Vacía tu cabeza]]
+	- [[#Parte I: Mente#Serénate y piensa a fondo|Serénate y piensa a fondo]]
+	- [[#Parte I: Mente#Lleva tu diario|Lleva tu diario]]
+	- [[#Parte I: Mente#Cultiva el silencio|Cultiva el silencio]]
+	- [[#Parte I: Mente#Persigue la sabiduría|Persigue la sabiduría]]
+	- [[#Parte I: Mente#Busca la seguridad en ti mismo, evita el ego|Busca la seguridad en ti mismo, evita el ego]]
+	- [[#Parte I: Mente#Suéltate|Suéltate]]
+	- [[#Parte I: Mente#Sobre lo que sigue|Sobre lo que sigue]]
+- [[#Parte II: El Espíritu|Parte II: El Espíritu]]
+	- [[#Parte II: El Espíritu#El ámbito del espíritu|El ámbito del espíritu]]
+	- [[#Parte II: El Espíritu#Elige la virtud|Elige la virtud]]
+	- [[#Parte II: El Espíritu#Sana a tu niño interior|Sana a tu niño interior]]
+	- [[#Parte II: El Espíritu#Cuídate del deseo|Cuídate del deseo]]
+	- [[#Parte II: El Espíritu#¡Basta!|¡Basta!]]
+	- [[#Parte II: El Espíritu#Báñate en la belleza|Báñate en la belleza]]
+	- [[#Parte II: El Espíritu#Acepta un poder superior|Acepta un poder superior]]
+	- [[#Parte II: El Espíritu#Forja relaciones|Forja relaciones]]
+	- [[#Parte II: El Espíritu#Vence la ira|Vence la ira]]
+	- [[#Parte II: El Espíritu#Todos somo uno|Todos somo uno]]
+	- [[#Parte II: El Espíritu#Sobre los que sigue|Sobre los que sigue]]
+- [[#Parte III: El Cuerpo|Parte III: El Cuerpo]]
+	- [[#Parte III: El Cuerpo#El ámbito del cuerpo|El ámbito del cuerpo]]
+	- [[#Parte III: El Cuerpo#Di que no|Di que no]]
+	- [[#Parte III: El Cuerpo#Da un paseo|Da un paseo]]
+	- [[#Parte III: El Cuerpo#Establece un rutina|Establece un rutina]]
+	- [[#Parte III: El Cuerpo#Deshazte de cosas|Deshazte de cosas]]
+	- [[#Parte III: El Cuerpo#Busca la soledad|Busca la soledad]]
+	- [[#Parte III: El Cuerpo#Sé un ser humano|Sé un ser humano]]
+	- [[#Parte III: El Cuerpo#Ve a dormir|Ve a dormir]]
+	- [[#Parte III: El Cuerpo#Busca un pasatiempo|Busca un pasatiempo]]
+	- [[#Parte III: El Cuerpo#Cuídate del escapismo|Cuídate del escapismo]]
+	- [[#Parte III: El Cuerpo#Actúa con valentía|Actúa con valentía]]
+	- [[#Parte III: El Cuerpo#Sobre el último acto|Sobre el último acto]]
+
+
+
 Todos los problemas de la humanidad se deben a que el hombre es incapaz de permanecer callado en una habitación. - Blaise Pascal en 1654
 
 ## Parte I: Mente
