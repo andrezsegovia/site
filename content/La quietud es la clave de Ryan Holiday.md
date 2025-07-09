@@ -7,9 +7,7 @@ categories:
  - Book Highlights
 ---
 
-- [Parte I: Mente](#Parte%20I%20Mente)
-- [Parte III: El Cuerpo](#Parte%20III%20El%20Cuerpo)
-- [Parte II: El Espíritu](#Parte%20II%20El%20Espíritu)
+{{< tableOfContent >}}
 
 Todos los problemas de la humanidad se deben a que el hombre es incapaz de permanecer callado en una habitación. - Blaise Pascal en 1654
 
