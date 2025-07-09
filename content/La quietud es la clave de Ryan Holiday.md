@@ -4,7 +4,7 @@ date: 2025-07-09T18:04:52-05:00
 draft: false
 weight: 1
 categories:
- - Book's Highlights
+ - Book Highlights
 ---
 
 Todos los problemas de la humanidad se deben a que el hombre es incapaz de permanecer callado en una habitación. - Blaise Pascal en 1654
