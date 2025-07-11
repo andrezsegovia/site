@@ -1,9 +1,0 @@
-{
-  "newFileLocation": "folder",
-  "newFileFolderPath": "content",
-  "newLinkFormat": "absolute",
-  "useMarkdownLinks": true,
-  "attachmentFolderPath": "img",
-  "livePreview": false,
-  "showLineNumber": false
-}
