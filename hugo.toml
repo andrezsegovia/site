@@ -2,7 +2,7 @@ baseURL = 'https://andrezsc.com/'
 title = 'Andrez Segovia'
 copyright = '© 2025 Andrez Segovia'
 
-theme = 'hugo-bearcub'
+theme = 'hugo-bearblog'
 
 defaultContentLanguage = 'en'
 languageCode = 'en-us'
