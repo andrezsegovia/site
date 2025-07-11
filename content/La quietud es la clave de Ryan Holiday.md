@@ -7,9 +7,10 @@ categories:
  - Book Highlights
 ---
 
+"Todos los problemas de la humanidad se deben a que el hombre es incapaz de permanecer callado en una habitación." —Blaise Pascal, 1654.
+
 {{< tableOfContent >}}
 
-Todos los problemas de la humanidad se deben a que el hombre es incapaz de permanecer callado en una habitación. - Blaise Pascal en 1654
 
 ## Parte I: Mente
 
