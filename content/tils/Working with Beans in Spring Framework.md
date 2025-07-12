@@ -3,6 +3,7 @@ title: "Working with Beans in Spring Framework"
 date: 2025-03-28T08:10:38-05:00
 draft: false
 weight: 1
+type: tils
 categories:
  - TIL
  - Spring Framework

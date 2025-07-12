@@ -3,6 +3,7 @@ title: "The IndieWeb"
 date: 2025-03-07T15:24:04-05:00
 draft: true
 weight: 1
+type: notes
 categories:
  - Draft
 ---

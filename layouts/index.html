@@ -1,6 +1,55 @@
 {{ define "main" }}
+<section>
   {{ .Content }}
-    {{range site.RegularPages }}
-      {{ .Render "summary"}}
-    {{ end }}
+</section>
+
+<div class="home-sections grid grid-cols-2 gap-8">
+  <!-- Articles -->
+  <div>
+    <h2><a href="/articles">Articles</a></h2>
+    <ul>
+      {{ range first 10 (where .Site.RegularPages "Section" "articles") }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+    <p><a href="/articles">See all articles →</a></p>
+  </div>
+
+  <!-- Notes -->
+  <div>
+    <h2><a href="/notes">Notes</a></h2>
+    <ul>
+      {{ range first 10 (where .Site.RegularPages "Section" "notes") }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+    <p><a href="/notes">See all notes →</a></p>
+  </div>
+
+  <!-- TILs -->
+  <div>
+    <h2><a href="/tils">TILs</a></h2>
+    <ul>
+      {{ range first 10 (where .Site.RegularPages "Section" "tils") }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    </ul>
+    <p><a href="/tils">See all TILs →</a></p>
+  </div>
+
+  <!-- Bookmarks -->
+  <div>
+    <h2><a href="/bookmarks">Bookmarks</a></h2>
+    <ul>
+      {{ range first 10 (where .Site.RegularPages "Section" "bookmarks") }}
+        <li>
+          <a href="{{ .Params.bookmarkUrl }}" target="_blank" rel="noopener noreferrer">
+            {{ .Title }}
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+    <p><a href="/bookmarks">See all bookmarks →</a></p>
+  </div>
+</div>
 {{ end }}

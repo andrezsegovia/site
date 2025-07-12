@@ -1,0 +1,8 @@
+{{ with .Params.bookmarkUrl }}
+  <meta http-equiv="refresh" content="0; url={{ . }}">
+  <link rel="canonical" href="{{ . }}">
+  <p>If you're not redirected automatically, <a href="{{ . }}" target="_blank" rel="noopener noreferrer">click here</a>.</p>
+{{ else }}
+  <h1>{{ .Title }}</h1>
+  <p>No external URL found for this bookmark.</p>
+{{ end }}

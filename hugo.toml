@@ -28,7 +28,6 @@ ignoreFiles = ['content/templates', 'content/.obsidian']
     [languages.en.params]
       madeWith = "Made with [Bear Cub](https://github.com/clente/hugo-bearcub)"
 
-
 [params]
     [params.author]
         name = 'Andrez Segovia'

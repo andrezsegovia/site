@@ -1,17 +1,8 @@
 {{ define "main" }}
-<div class="categories">
-    <div class="header">
-        <p>Here are all the categories.</p>
-    </div>
-    <div class="body">
-        {{range .Pages.ByTitle}}
-        <div class="category">
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            <span class="subsup">
-                <sub>({{ .Pages.Len }})</sub>
-            </span>
-        </div>
-        {{end}}
-    </div>
-</div>
+  <h1>{{ .Title }}</h1>
+  <ul>
+    {{ range .Pages.ByDate.Reverse }}
+      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a> – {{ .Date.Format "2006-01-02" }}</li>
+    {{ end }}
+  </ul>
 {{ end }}

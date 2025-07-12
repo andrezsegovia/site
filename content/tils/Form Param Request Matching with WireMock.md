@@ -3,6 +3,7 @@ title: "Form Param Request Matching with WireMock"
 date: 2025-04-02T20:24:45-05:00
 draft: false
 weight: 1
+type: tils
 categories:
  - Java
  - JUnit

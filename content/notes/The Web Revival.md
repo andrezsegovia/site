@@ -3,6 +3,7 @@ title: The Web Revival
 date: 2025-03-06T21:24:14-05:00
 draft: false
 weight: 1
+type: notes
 categories:
   - Internet
   - Notes

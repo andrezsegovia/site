@@ -3,6 +3,7 @@ title: "The @DirtiesContext Spring Annotation"
 date: 2025-03-28T21:01:25-05:00
 draft: false
 weight: 1
+type: tils
 categories:
  - TIL
  - Spring Framework

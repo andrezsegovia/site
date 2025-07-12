@@ -3,6 +3,7 @@ title: "Find All Letters Event Grave And Acute Ones With a Regular Expression"
 date: 2025-03-19T09:16:36-05:00
 draft: false
 weight: 1
+type: tils
 categories:
  - Regular Expresions
  - TIL

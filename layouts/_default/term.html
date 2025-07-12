@@ -1,13 +1,8 @@
 {{ define "main" }}
-  {{ $pages := .Pages }}
-  <div>
-    <h1>{{ .Title }} 
-      <span class="subsup">
-        <sub>({{ $pages.Len }})</sub>
-      </span>
-    </h1>
-  </div>
-  {{ range $pages}}
-    {{ .Render "summary"}}
+<h1>Posts in "{{ .Title }}"</h1>
+<ul>
+  {{ range .Pages }}
+    <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
   {{ end }}
+</ul>
 {{ end }}

@@ -3,6 +3,7 @@ title: "The Importance of a Brag Document"
 date: 2025-03-20T06:54:53-05:00
 draft: false
 weight: 1
+type: notes
 categories:
  - Career
  - Notes

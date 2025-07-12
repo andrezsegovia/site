@@ -3,6 +3,7 @@ title: "Validate the arguments passed to a method"
 date: 2025-03-26T19:25:29-05:00
 draft: false
 weight: 1
+type: tils
 categories:
  - TIL
  - Java
