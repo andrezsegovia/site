@@ -1,17 +1,19 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
-<ul>
-  {{ range .Pages }}
-    {{ $page := . }}
-    {{ with $page.Params.bookmarkUrl }}
-      <li>
-        <a href="{{ . }}" target="_blank" rel="noopener noreferrer">
-          {{ $page.Title }}
-        </a>
-      </li>
-    {{ else }}
-      <li>{{ $page.Title }} (missing bookmarkUrl)</li>
+<div class="list-sections">
+  <ul>
+      {{ range .Pages }}
+      {{ $page := . }}
+      {{ with $page.Params.bookmarkUrl }}
+        <li>
+          <a href="{{ . }}" target="_blank" rel="noopener noreferrer">
+            {{ $page.Title }}
+          </a>
+        </li>
+      {{ else }}
+        <li>{{ $page.Title }} (missing bookmarkUrl)</li>
+      {{ end }}
     {{ end }}
-  {{ end }}
-</ul>
+  </ul>
+</div>
 {{ end }}

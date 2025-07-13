@@ -5,8 +5,6 @@ draft: false
 menu: main
 ---
 
-## People
-
 - [offlinemark](https://offlinemark.com)
 - [Derek Sivers](https://sive.rs/)
 - [Simon Sarris](https://map.simonsarris.com/)

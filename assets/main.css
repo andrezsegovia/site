@@ -28,18 +28,14 @@ header nav a:link {
     text-align: left;
 }
 
-.categories {
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-.categories a:link {
-    text-decoration: none;
+header {
+  padding-bottom: 1rem;
 }
 
 .header h1 {
     margin-bottom: 0;
 }
+
 .header  .subtitle {
     font-size: 14px;
 }
@@ -62,45 +58,38 @@ header nav a:link {
 }
 
 .home-sections {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    margin-top: 2rem;
-  }
-  
-  @media (min-width: 768px) {
-    .home-sections {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  .home-sections h2 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 0.25rem;
-  }
-  
-  .home-sections ul {
-    list-style: circle;
-    padding-left: 0;
-    margin: 0;
-  }
-  
-  .home-sections li {
-    margin-bottom: 0.25rem;
-  }
-  
-  .home-sections li a {
-    display: block;
-    color: inherit;
-    text-decoration: none;
-    transition: color 0.2s ease;
-  }
-  
-  .home-sections li a:hover {
-    text-decoration: underline;
-    background-color: #f0f0f0;
-    color: #005a9c; /* optional: a subtle highlight */
-  }
-  
+  display: block;
+  margin-top: 2rem;
+}
+
+.home-sections h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  padding-bottom: 0.25rem;
+}
+
+.list-sections div {
+  margin: 2rem 0;
+}
+
+.list-sections ul {
+  padding-left: 2rem;
+  margin: 0 0 1rem 0;
+}
+
+.list-sections li {
+  margin-bottom: 0rem;
+}
+
+.list-sections li a {
+  display: block;
+  padding: 0.25rem 0.5rem;
+  color: inherit;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.list-sections li a:hover {
+  background-color: #f5f5f5;
+  color: #005a9c;
+}
