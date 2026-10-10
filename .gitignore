@@ -1,2 +1,12 @@
 public/**/*
 .obsidian
+
+# Editor / OS noise
+.DS_Store
+**/.DS_Store
+*.swp
+*~
+
+# Hugo
+.hugo_build.lock
+resources/_gen/

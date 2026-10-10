@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.Language.LanguageCode }}{{ . }}{{ else }}en-US{{ end }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  {{ with .Params.bookmarkUrl }}
+  <meta http-equiv="refresh" content="0; url={{ . }}">
+  <link rel="canonical" href="{{ . }}">
+  <title>{{ $.Title }}</title>
+  {{ else }}
+  <title>{{ .Title }}</title>
+  {{ end }}
+</head>
+<body>
+  {{ with .Params.bookmarkUrl }}
+  <p>Redirecting to <a href="{{ . }}" target="_blank" rel="noopener noreferrer">{{ . }}</a>…</p>
+  <p>If you're not redirected automatically, <a href="{{ . }}" target="_blank" rel="noopener noreferrer">click here</a>.</p>
+  {{ else }}
+  <h1>{{ .Title }}</h1>
+  <p>No external URL found for this bookmark.</p>
+  {{ end }}
+</body>
+</html>

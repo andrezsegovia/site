@@ -1,2 +1,2 @@
-{{ $stylesFile := resources.Get "main.css" | minify}}
+{{ $stylesFile := resources.Get "main.css" | minify | fingerprint}}
 <link href="{{ $stylesFile.RelPermalink }}" rel="stylesheet">

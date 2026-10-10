@@ -47,7 +47,7 @@ public class AppConfig {
 ### Using XML-based bean definition
 
 ```xml
-`<bean id="userService" class="com.example.UserService"/>`
+<bean id="userService" class="com.example.UserService"/>
 ```
 
 This approached was used before the annotations implementation.

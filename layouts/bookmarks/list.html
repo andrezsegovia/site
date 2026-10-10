@@ -2,7 +2,7 @@
 <h1>{{ .Title }}</h1>
 <div class="list-sections">
   <ul>
-      {{ range .Pages }}
+      {{ range .Pages.ByDate.Reverse }}
       {{ $page := . }}
       {{ with $page.Params.bookmarkUrl }}
         <li>
