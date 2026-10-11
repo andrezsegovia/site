@@ -5,7 +5,6 @@ draft: false
 weight: 1
 type: tils
 categories:
- - TIL
  - Java
  - JUnit
  - Mockito

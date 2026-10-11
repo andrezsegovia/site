@@ -6,7 +6,6 @@ weight: 1
 type: notes
 categories:
  - Career
- - Notes
 ---
 
 Julia Evans suggests keeping a document with all the work we've done —she calls it a Brag Document— to share with our managers, making their job easier during performance evaluations.

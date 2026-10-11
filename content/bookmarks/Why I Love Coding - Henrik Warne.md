@@ -7,6 +7,5 @@ type: bookmark
 params:
  bookmarkUrl: https://henrikwarne.com/2012/06/02/why-i-love-coding/
 categories:
- - Bookmarks
  - Programming
 ---

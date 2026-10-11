@@ -7,7 +7,6 @@ type: bookmark
 params:
  bookmarkUrl: https://henrikwarne.com/2024/11/09/my-simple-knowledge-management-and-time-tracking-system/
 categories:
- - Bookmarks
  - Note-taking
  - Productivity
 ---

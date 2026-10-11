@@ -7,7 +7,6 @@ type: bookmark
 params:
  bookmarkUrl: https://jrnl.sh/en/stable/
 categories:
- - Bookmarks
  - Note-taking
 ---
 

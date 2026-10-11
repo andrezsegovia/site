@@ -7,6 +7,5 @@ type: bookmark
 params:
  bookmarkUrl: https://www.youtube.com/watch?v=PYuJKGNFHtM
 categories:
- - Bookmarks
  - Woodworking
 ---

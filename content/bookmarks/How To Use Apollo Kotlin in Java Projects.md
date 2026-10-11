@@ -8,7 +8,6 @@ summary: The article describes how to use Apollo Kotlin in Java projects.
 params:
  bookmarkUrl: https://apollographql.github.io/apollo-kotlin-java-support/welcome.html
 categories:
- - Bookmarks
  - Java
  - GraphQL
 ---

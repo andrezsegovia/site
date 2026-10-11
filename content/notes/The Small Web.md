@@ -6,7 +6,6 @@ weight: 1
 type: notes
 categories:
  - Internet
- - Notes
 ---
 
 >On the Big Web, you never own your own home. You must rent your home from Megacorps. Most often, you don’t have to pay for your home using money. You pay for it by forfeiting your privacy, freedom of speech, and your other human rights. Collectively, we pay for it by forfeiting a democratic future.1

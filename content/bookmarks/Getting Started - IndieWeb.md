@@ -7,7 +7,6 @@ type: bookmark
 params:
  bookmarkUrl: https://indieweb.org/Getting_Started
 categories:
- - Bookmarks
  - Internet
 ---
 

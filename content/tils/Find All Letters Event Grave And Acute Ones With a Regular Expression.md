@@ -5,8 +5,7 @@ draft: false
 weight: 1
 type: tils
 categories:
- - Regular Expresions
- - TIL
+ - Regular Expressions
 ---
 
 ```java

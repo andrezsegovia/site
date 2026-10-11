@@ -5,8 +5,7 @@ draft: false
 weight: 1
 type: notes
 categories:
-  - Internet
-  - Notes
+ - Internet
 ---
 
 > Surfing the web is about going on an adventure, it's about clicking links and seeing where they go. You won't find Web Revival sites on typical search engines, you won't find them on social media sites and no algorithm will pick them out for you. To surf the Web Revival, you start on one site, you find links and you follow the trail; be brave, explore, keep going, keep going![^1]

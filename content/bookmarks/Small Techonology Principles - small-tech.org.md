@@ -7,6 +7,5 @@ type: bookmark
 params:
  bookmarkUrl: https://small-tech.org/about/#small-technology
 categories:
- - Bookmarks
  - Internet
 ---

@@ -7,6 +7,5 @@ type: bookmark
 params:
  bookmarkUrl: https://www.henrikkarlsson.xyz/p/agency
 categories:
- - Bookmarks
  - Essay
 ---

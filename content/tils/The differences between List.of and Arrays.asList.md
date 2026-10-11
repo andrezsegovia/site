@@ -6,7 +6,6 @@ weight: 1
 type: tils
 categories:
  - Java
- - TIL
 ---
 
 [This StackOverflow answer](https://stackoverflow.com/a/46579348/6297127) explains the different between `List.of` and `Arrays.asList`.

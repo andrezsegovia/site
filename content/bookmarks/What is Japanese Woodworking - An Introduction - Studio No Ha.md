@@ -8,5 +8,4 @@ params:
  bookmarkUrl: https://www.youtube.com/watch?v=FofTq546kgM
 categories:
  - Woodworking
- - Bookmarks
 ---

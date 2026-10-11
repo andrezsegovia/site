@@ -8,7 +8,6 @@ params:
  bookmarkUrl: https://boffosocko.com/2017/07/28/an-introduction-to-the-indieweb/
 categories:
  - Internet
- - Bookmarks
 ---
 
 

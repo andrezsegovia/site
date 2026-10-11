@@ -6,7 +6,6 @@ weight: 1
 type: notes
 categories:
  - Internet
- - Notes
 ---
 
 [10:59] Where Jeremy talks about the disadvantages of using platforms such as FaceBook, Instagram, or Twitter.
