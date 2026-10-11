@@ -18,6 +18,7 @@ ignoreFiles = ['content/templates', 'content/.obsidian']
         lineNos = true
         lineNumbersInTable = false
         noClasses = true
+        style = 'github-dark'
 
 [languages]
   [languages.en]
