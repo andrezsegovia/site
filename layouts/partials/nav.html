@@ -1,6 +1,12 @@
 <div class="main-menu">
-  {{ range .Site.Menus.main.ByWeight }}
-    <a href="{{ .URL }}">{{ upper .Name }}</a>
+  <input type="checkbox" id="menu-toggle" class="menu-toggle" hidden>
+  <label for="menu-toggle" class="menu-icon" aria-label="Toggle menu">
+    <span></span><span></span><span></span>
+  </label>
+  <div class="menu-items">
+    {{ range .Site.Menus.main.ByWeight }}
+      <a href="{{ .URL }}">{{ upper .Name }}</a>
     {{ end }}
-  <a href='{{ absURL "index.xml" }}'>RSS</a>
+    <a href='{{ absURL "index.xml" }}'>RSS</a>
+  </div>
 </div>
