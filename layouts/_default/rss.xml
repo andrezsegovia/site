@@ -38,6 +38,14 @@
 {{- else }}
 {{- $pages = $pctx.Pages }}
 {{- end }}
+{{- /* Exclude pages without a body (e.g. bookmark stubs) from the feed. */}}
+{{- $withBody := slice }}
+{{- range $pages }}
+{{- if gt (len (strings.TrimSpace .RawContent)) 0 }}
+{{- $withBody = $withBody | append . }}
+{{- end }}
+{{- end }}
+{{- $pages = $withBody }}
 {{- $limit := .Site.Config.Services.RSS.Limit }}
 {{- if ge $limit 1 }}
 {{- $pages = $pages | first $limit }}
