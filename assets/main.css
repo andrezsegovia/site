@@ -73,6 +73,11 @@ header {
     color: var(--accent-secondary);
 }
 
+/* Tag row at the bottom of feed/archive/bookmark cards. */
+.post-tags {
+    margin-top: 0.4rem;
+}
+
 .separator {
     width: 5%; /* Adjust the width as needed */
     margin: 10px auto; /* Centers the line and adds spacing */
@@ -80,15 +85,101 @@ header {
     border-top: 2px solid var(--border-color); /* Creates a short solid line */
 }
 
-.home-sections {
+.feed {
   display: block;
   margin-top: 2rem;
 }
 
-.home-sections h2 {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  padding-bottom: 0.25rem;
+.feed-item.post {
+  padding: 20px 0 10px 0;
+}
+
+/* Compact archive rows: type, categories, date and linked title only. */
+.archive-item.post {
+  padding: 12px 0;
+}
+
+.archive-item h2.archive-title {
+  font-size: 1.05rem;
+  margin: 0.25rem 0 0;
+}
+
+.post-type {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.5em;
+  padding: 0.1em 0.55em;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  color: var(--accent-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.68rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+/* Grouped feed: month/year label on the left, that month's items on the right. */
+.monthly-feed {
+  margin-top: 2rem;
+}
+
+.month-group {
+  display: grid;
+  grid-template-columns: minmax(8rem, 12rem) 1fr;
+  gap: 0.5rem 2rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--border-color);
+}
+
+.month-label {
+  position: sticky;
+  top: 1rem;
+  align-self: start;
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted-color);
+}
+
+.month-items {
+  min-width: 0;
+}
+
+@media (max-width: 640px) {
+  .month-group {
+    grid-template-columns: 1fr;
+    gap: 0.25rem;
+  }
+
+  .month-label {
+    position: static;
+  }
+}
+
+.feed-sentinel {
+  min-height: 1px;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.feed-sentinel a {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+}
+
+.feed-sentinel.is-loading a {
+  display: none;
+}
+
+.feed-sentinel.is-loading::after {
+  content: "Loading…";
+  color: var(--muted-color);
+  font-size: 0.9rem;
 }
 
 .list-sections div {

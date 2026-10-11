@@ -1,0 +1,21 @@
+{{/* Grouped feed renderer: items bucketed by month/year, newest first.
+     Expects a dict:
+       - "page":  the list page context
+       - "pages": the slice of pages to group
+       - "item":  optional partial name to render each page
+                  (defaults to "archive-item.html")
+     Renders one row per month: sticky month/year label on the left,
+     that month's items on the right. No pagination/infinite scroll. */}}
+{{ $item := .item | default "archive-item.html" }}
+<div class="monthly-feed">
+  {{ range .pages.GroupByDate "January 2006" }}
+  <section class="month-group">
+    <h2 class="month-label" id="{{ .Key | anchorize }}">{{ .Key }}</h2>
+    <div class="month-items">
+      {{ range .Pages }}
+        {{ partial $item . }}
+      {{ end }}
+    </div>
+  </section>
+  {{ end }}
+</div>

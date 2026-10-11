@@ -1,10 +1,8 @@
 {{ define "main" }}
 <div class="list-sections">
   <h1>{{ .Title }}</h1>
-  <ul>
-    {{ range .Pages.ByDate.Reverse }}
-      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-    {{ end }}
-  </ul>
+  {{ with .Content }}{{ . }}{{ end }}
 </div>
+
+{{ partial "grouped-feed.html" (dict "page" . "pages" .Pages.ByDate.Reverse "item" "archive-item.html") }}
 {{ end }}

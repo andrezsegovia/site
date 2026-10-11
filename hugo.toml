@@ -34,6 +34,16 @@ ignoreFiles = ['content/templates', 'content/.obsidian']
 
 [menus]
   [[menus.main]]
+    name = 'Archive'
+    pageRef = '/archive'
+    weight = 2
+
+  [[menus.main]]
+    name = 'Bookmarks'
+    pageRef = '/bookmarks'
+    weight = 5
+
+  [[menus.main]]
     name = 'Categories'
     pageRef = '/categories'
     weight = 11

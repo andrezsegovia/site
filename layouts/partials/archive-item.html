@@ -1,0 +1,15 @@
+{{ $labels := dict "articles" "Article" "tils" "TIL" "notes" "Note" "bookmark" "Bookmark" "bookmarks" "Bookmark" }}
+{{ $label := or (index $labels .Type) .Type }}
+{{/* Compact row: type, categories, publication date, linked title.
+     Bookmark stubs link to their external bookmarkUrl; other pages link locally.
+     Keeps the "feed-item" class so the infinite-scroll loader picks it up. */}}
+{{ $isBookmark := and (eq .Type "bookmark") .Params.bookmarkUrl }}
+{{ $url := .RelPermalink }}
+{{ if $isBookmark }}{{ $url = .Params.bookmarkUrl }}{{ end }}
+<article class="post h-entry feed-item archive-item">
+  <h2 class="archive-title"><a class="p-name u-url{{ if $isBookmark }} u-bookmark-of{{ end }}" href="{{ $url }}"{{ if $isBookmark }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Title }}</a><span class="post-type">{{ $label }}</span></h2>
+  <div class="post-meta">
+    <time class="dt-published" datetime='{{ .Date | time.Format "2006-01-02T15:04:05-07:00" }}'>{{ .Date | time.Format ":date_long" }}</time>
+  </div>
+  {{ partial "post-tags.html" . }}
+</article>

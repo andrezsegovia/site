@@ -1,0 +1,24 @@
+{{/* Shared feed renderer: item list + infinite scroll.
+     Expects a dict:
+       - "page":  the list page context (owner of the paginator)
+       - "pages": the slice of pages to paginate
+       - "item":  optional partial name to render each page
+                  (defaults to "feed-item.html")
+     Renders 10 items per page. */}}
+{{ $page := .page }}
+{{ $item := .item | default "feed-item.html" }}
+{{ $paginator := $page.Paginate .pages 10 }}
+
+<div id="feed" class="feed">
+  {{ range $paginator.Pages }}
+    {{ partial $item . }}
+  {{ end }}
+</div>
+
+<div id="feed-sentinel" class="feed-sentinel"{{ with $paginator.Next }} data-next="{{ .URL }}"{{ end }}>
+  {{ with $paginator.Next }}
+    <a href="{{ .URL }}">Load more</a>
+  {{ end }}
+</div>
+
+{{ partial "infinite-feed.html" $page }}

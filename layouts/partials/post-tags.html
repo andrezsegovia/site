@@ -1,0 +1,7 @@
+{{/* Shared tag row: renders a page's categories as links. Expects a page
+     context. Used at the bottom of feed/archive/bookmark cards. */}}
+{{ with .GetTerms "categories" }}
+<div class="post-meta post-tags">
+  {{ range $i, $t := .ByTitle }}{{ if $i }} &#x2022; {{ end }}<a class="p-category" href="{{ $t.RelPermalink }}">#{{ $t.LinkTitle }}</a>{{ end }}
+</div>
+{{ end }}

@@ -1,0 +1,12 @@
+{{ define "main" }}
+<div class="list-sections">
+  <h1>{{ .Title }}</h1>
+  {{ with .Content }}{{ . }}{{ end }}
+</div>
+
+{{/* Combined archive: Articles, TILs and Notes, newest first.
+     Bookmarks are excluded (they are external redirect stubs). */}}
+{{ $types := slice "articles" "tils" "notes" }}
+{{ $pages := where site.RegularPages "Section" "in" $types }}
+{{ partial "grouped-feed.html" (dict "page" . "pages" $pages.ByDate.Reverse "item" "archive-item.html") }}
+{{ end }}

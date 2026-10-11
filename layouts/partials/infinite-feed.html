@@ -1,0 +1,62 @@
+<script>
+  (function () {
+    var feed = document.getElementById('feed');
+    var sentinel = document.getElementById('feed-sentinel');
+    if (!feed || !sentinel || !sentinel.dataset.next) return;
+    if (!('IntersectionObserver' in window)) return;
+
+    var loading = false;
+
+    function load() {
+      if (loading) return;
+      var next = sentinel.dataset.next;
+      if (!next) return;
+      loading = true;
+      sentinel.classList.add('is-loading');
+
+      fetch(next)
+        .then(function (res) {
+          if (!res.ok) throw new Error('HTTP ' + res.status);
+          return res.text();
+        })
+        .then(function (html) {
+          var doc = new DOMParser().parseFromString(html, 'text/html');
+          var items = doc.querySelectorAll('#feed .feed-item');
+          for (var i = 0; i < items.length; i++) {
+            feed.appendChild(document.importNode(items[i], true));
+          }
+
+          var nextSentinel = doc.getElementById('feed-sentinel');
+          var nextUrl = nextSentinel ? nextSentinel.dataset.next : '';
+          var link = sentinel.querySelector('a');
+
+          if (nextUrl) {
+            sentinel.dataset.next = nextUrl;
+            if (link) link.setAttribute('href', nextUrl);
+          } else {
+            sentinel.removeAttribute('data-next');
+            if (link) link.remove();
+            observer.disconnect();
+          }
+        })
+        .catch(function (err) {
+          console.error('Feed: failed to load more items', err);
+        })
+        .finally(function () {
+          loading = false;
+          sentinel.classList.remove('is-loading');
+        });
+    }
+
+    var observer = new IntersectionObserver(function (entries) {
+      for (var i = 0; i < entries.length; i++) {
+        if (entries[i].isIntersecting) {
+          load();
+          return;
+        }
+      }
+    }, { rootMargin: '300px 0px' });
+
+    observer.observe(sentinel);
+  })();
+</script>
