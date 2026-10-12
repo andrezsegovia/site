@@ -2,9 +2,25 @@
 <div class="list-sections">
   <h1>{{ .Title }}</h1>
   {{ with .Content }}{{ . }}{{ end }}
-</div>
 
-{{/* Bookmark pages are external redirect stubs; bookmark-item.html renders a
-     compact row linking each title to its bookmarkUrl. */}}
-{{ partial "grouped-feed.html" (dict "page" . "pages" .Pages.ByDate.Reverse "item" "bookmark-item.html") }}
+  {{/* Bookmarks grouped by category, mirroring the Categories page layout.
+       Each card lists bookmark titles linking to their external bookmarkUrl. */}}
+  <div class="category-grid">
+    {{ range .Site.Taxonomies.categories.Alphabetical }}
+      {{ $term := .Page }}
+      {{ with where .Pages "Type" "bookmark" }}
+        <section class="category-card">
+          <h2><a href="{{ $term.RelPermalink }}">{{ $term.Title }}</a></h2>
+          <ul>
+            {{ range .ByDate.Reverse }}
+              {{ $url := or .Params.bookmarkUrl .RelPermalink }}
+              {{ $external := .Params.bookmarkUrl }}
+              <li><a href="{{ $url }}"{{ if $external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Title }}</a></li>
+            {{ end }}
+          </ul>
+        </section>
+      {{ end }}
+    {{ end }}
+  </div>
+</div>
 {{ end }}

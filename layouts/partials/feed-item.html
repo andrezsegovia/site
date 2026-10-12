@@ -1,13 +1,11 @@
 {{ $type := .Type }}
 {{ $labels := dict "articles" "Article" "tils" "TIL" "notes" "Note" "bookmark" "Bookmark" "bookmarks" "Bookmark" }}
 {{ $label := or (index $labels $type) $type }}
-{{/* Bookmarks are external redirect stubs: link the card to the external URL. */}}
-{{ $isBookmark := and (eq $type "bookmark") .Params.bookmarkUrl }}
-{{ $url := .RelPermalink }}
-{{ if $isBookmark }}{{ $url = .Params.bookmarkUrl }}{{ end }}
+{{/* Full feed card for body content (articles, TILs, notes). Bookmarks are
+     rendered separately via bookmark-item.html. */}}
 <article class="post h-entry feed-item">
   <header>
-    <h2><a class="p-name u-url{{ if $isBookmark }} u-bookmark-of{{ end }}" href="{{ $url }}"{{ if $isBookmark }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Title }}</a><span class="post-type">{{ $label }}</span></h2>
+    <h2><a class="p-name u-url" href="{{ .RelPermalink }}">{{ .Title }}</a><span class="post-type">{{ $label }}</span></h2>
     <div class="post-meta">
       Published on <time class="dt-published" datetime='{{ .Date | time.Format "2006-01-02T15:04:05-07:00" }}'>{{ .Date | time.Format ":date_long" }}</time>
       &#x2022;
@@ -18,11 +16,7 @@
     {{ .Summary }}
   </div>
   <footer>
-    {{ if $isBookmark }}
-      <a href="{{ .Params.bookmarkUrl }}" target="_blank" rel="noopener noreferrer">Visit&nbsp;&raquo;</a>
-    {{ else }}
-      <a href="{{ .RelPermalink }}">Read&nbsp;more&nbsp;&raquo;</a>
-    {{ end }}
+    <a href="{{ .RelPermalink }}">Read&nbsp;more&nbsp;&raquo;</a>
   </footer>
   {{ partial "post-tags.html" . }}
 </article>

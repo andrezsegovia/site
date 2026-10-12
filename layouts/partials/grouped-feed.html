@@ -13,7 +13,13 @@
     <h2 class="month-label" id="{{ .Key | anchorize }}">{{ .Key }}</h2>
     <div class="month-items">
       {{ range .Pages }}
-        {{ partial $item . }}
+        {{/* Bookmark stubs render through the highlighted bookmark card so they
+             stand out among body content, mirroring the home feed. */}}
+        {{ if eq .Type "bookmark" }}
+          {{ partial "bookmark-item.html" . }}
+        {{ else }}
+          {{ partial $item . }}
+        {{ end }}
       {{ end }}
     </div>
   </section>

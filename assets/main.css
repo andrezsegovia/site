@@ -158,6 +158,36 @@ header {
   margin: 0.25rem 0 0;
 }
 
+/* Compact bookmark cards: the whole card is one click target (stretched
+   link), and the background highlights on hover. */
+.bookmark-card.post {
+  position: relative;
+  cursor: pointer;
+  padding: 12px 12px 12px 9px; /* 9px + 3px border keeps text aligned */
+  margin: 0.6rem -12px;
+  background-color: var(--surface-color);
+  border-left: 3px solid var(--accent-secondary);
+  border-radius: 6px;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.bookmark-card:hover {
+  background-color: var(--surface-hover-color);
+  border-left-color: var(--link-color);
+}
+
+.bookmark-card .bookmark-link::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+/* Keep the category links clickable above the stretched link. */
+.bookmark-card .post-tags {
+  position: relative;
+  z-index: 1;
+}
+
 .post-type {
   display: inline-block;
   vertical-align: middle;

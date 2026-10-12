@@ -4,6 +4,7 @@
        - "pages": the slice of pages to paginate
        - "item":  optional partial name to render each page
                   (defaults to "feed-item.html")
+     Bookmark pages always render through the compact "bookmark-item.html".
      Renders 10 items per page. */}}
 {{ $page := .page }}
 {{ $item := .item | default "feed-item.html" }}
@@ -11,7 +12,11 @@
 
 <div id="feed" class="feed">
   {{ range $paginator.Pages }}
-    {{ partial $item . }}
+    {{ if eq .Type "bookmark" }}
+      {{ partial "bookmark-item.html" . }}
+    {{ else }}
+      {{ partial $item . }}
+    {{ end }}
   {{ end }}
 </div>
 

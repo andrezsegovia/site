@@ -3,11 +3,11 @@
   {{ .Content }}
 </section>
 
-{{/* Home feed: every regular page that has a body, newest first. Pages
-     without a body (e.g. bookmarks) are intentionally excluded. */}}
+{{/* Home feed: every regular page that has a body, plus bookmark stubs
+     (which have no body), newest first. */}}
 {{ $feed := slice }}
 {{ range site.RegularPages.ByDate.Reverse }}
-  {{ if gt (len (strings.TrimSpace .RawContent)) 0 }}
+  {{ if or (eq .Type "bookmark") (gt (len (strings.TrimSpace .RawContent)) 0) }}
     {{ $feed = $feed | append . }}
   {{ end }}
 {{ end }}

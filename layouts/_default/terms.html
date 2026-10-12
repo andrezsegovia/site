@@ -3,22 +3,21 @@
   <h1>{{ .Title }}</h1>
   {{ with .Content }}{{ . }}{{ end }}
 
-  {{ $labels := dict "articles" "Article" "tils" "TIL" "notes" "Note" "bookmark" "Bookmark" "bookmarks" "Bookmark" }}
+  {{ $labels := dict "articles" "Article" "tils" "TIL" "notes" "Note" }}
   <div class="category-grid">
     {{ range .Data.Terms.Alphabetical }}
-      <section class="category-card">
-        <h2><a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a></h2>
-        <ul>
-          {{ range .Pages.ByDate.Reverse }}
-            {{/* Bookmark stubs link straight at their external URL; other pages link locally. */}}
-            {{ $isBookmark := and (eq .Type "bookmark") .Params.bookmarkUrl }}
-            {{ $url := .RelPermalink }}
-            {{ if $isBookmark }}{{ $url = .Params.bookmarkUrl }}{{ end }}
-            {{ $label := or (index $labels .Type) .Type }}
-            <li><a href="{{ $url }}"{{ if $isBookmark }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Title }}<span class="post-type">{{ $label }}</span></a></li>
-          {{ end }}
-        </ul>
-      </section>
+      {{ $term := .Page }}
+      {{ with where .Pages "Type" "ne" "bookmark" }}
+        <section class="category-card">
+          <h2><a href="{{ $term.RelPermalink }}">{{ $term.Title }}</a></h2>
+          <ul>
+            {{ range .ByDate.Reverse }}
+              {{ $label := or (index $labels .Type) .Type }}
+              <li><a href="{{ .RelPermalink }}">{{ .Title }}<span class="post-type">{{ $label }}</span></a></li>
+            {{ end }}
+          </ul>
+        </section>
+      {{ end }}
     {{ end }}
   </div>
 </div>
