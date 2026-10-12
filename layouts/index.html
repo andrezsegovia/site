@@ -1,16 +1,52 @@
 {{ define "main" }}
-<section>
-  {{ .Content }}
-</section>
+<div class="home-layout">
+  <div class="home-main">
+    <section>
+      {{ .Content }}
+    </section>
 
-{{/* Home feed: every regular page that has a body, plus bookmark stubs
-     (which have no body), newest first. */}}
-{{ $feed := slice }}
-{{ range site.RegularPages.ByDate.Reverse }}
-  {{ if or (eq .Type "bookmark") (gt (len (strings.TrimSpace .RawContent)) 0) }}
-    {{ $feed = $feed | append . }}
-  {{ end }}
-{{ end }}
+    {{/* Home feed: every regular page that has a body, plus bookmark stubs
+         (which have no body), newest first. */}}
+    {{ $feed := slice }}
+    {{ range site.RegularPages.ByDate.Reverse }}
+      {{ if or (eq .Type "bookmark") (gt (len (strings.TrimSpace .RawContent)) 0) }}
+        {{ $feed = $feed | append . }}
+      {{ end }}
+    {{ end }}
 
-{{ partial "feed.html" (dict "page" . "pages" $feed) }}
+    {{ partial "feed.html" (dict "page" . "pages" $feed) }}
+  </div>
+
+  <aside class="home-sidebar">
+    {{/* Latest 20 bookmarks, newest first. Titles are rendered as cards
+         matching the feed's bookmark cards. */}}
+    {{ $bookmarks := slice }}
+    {{ range site.RegularPages.ByDate.Reverse }}
+      {{ if eq .Type "bookmark" }}
+        {{ $bookmarks = $bookmarks | append . }}
+      {{ end }}
+    {{ end }}
+    {{ with $bookmarks | first 20 }}
+      <section class="sidebar-section">
+        <h2 class="sidebar-heading">Latest Bookmarks</h2>
+        {{ range . }}
+          {{ $url := or .Params.bookmarkUrl .RelPermalink }}
+          {{ $external := .Params.bookmarkUrl }}
+          <a class="sidebar-card" href="{{ $url }}"{{ if $external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Title }}</a>
+        {{ end }}
+      </section>
+    {{ end }}
+
+    {{/* Hand-maintained Blogroll page content, shown after the bookmarks. */}}
+    {{ with site.GetPage "/blogroll" }}
+      {{ $blogrollTitle := .Title }}
+      {{ with .Content }}
+        <section class="sidebar-section">
+          <h2 class="sidebar-heading">{{ $blogrollTitle }}</h2>
+          <div class="sidebar-links">{{ . }}</div>
+        </section>
+      {{ end }}
+    {{ end }}
+  </aside>
+</div>
 {{ end }}

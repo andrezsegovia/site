@@ -332,3 +332,73 @@ pre,
 code {
   font-family: var(--font-code);
 }
+
+/* Home page: feed on the left, bookmark/link sidebar on the right. */
+.home-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 18rem;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.home-main {
+  min-width: 0;
+}
+
+.home-sidebar {
+  position: sticky;
+  top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-size: 0.9rem;
+}
+
+/* The first sidebar section sits directly under the menu, so only sections
+   after the first get a top rule (avoids doubling the menu's bottom border). */
+.sidebar-section + .sidebar-section {
+  border-top: 1px solid var(--border-color);
+  padding-top: 1.25rem;
+}
+
+.sidebar-heading {
+  font-size: 0.8rem;
+  margin: 0 0 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted-color);
+}
+
+.sidebar-links ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+/* Sidebar links match the Bookmarks page list: plain links whose background
+   highlights (and text turns to the link colour) on hover. */
+.sidebar-card,
+.sidebar-links a {
+  display: block;
+  padding: 0.25rem 0.5rem;
+  color: inherit;
+  line-height: 1.35;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.sidebar-card:hover,
+.sidebar-links a:hover {
+  background-color: var(--surface-color);
+  color: var(--link-color);
+}
+
+@media (max-width: 800px) {
+  .home-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .home-sidebar {
+    display: none;
+  }
+}
