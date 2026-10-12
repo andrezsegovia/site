@@ -1,5 +1,5 @@
 ---
-title: "Links"
+title: "Blogroll"
 date: 2025-03-12T15:28:55-05:00
 draft: false
 menu: main

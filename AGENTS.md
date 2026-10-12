@@ -24,7 +24,7 @@ is authored in Obsidian.
 ## Content model
 
 Content lives under `content/` and is split into sections: `articles`, `notes`,
-`tils`, `bookmarks`, `links`. `_index.md` in each section sets its title.
+`tils`, `bookmarks`, `blogroll`. `_index.md` in each section sets its title.
 
 Front matter conventions (see existing files, not the `templates/` folder):
 - `type` is set to the section name (`tils`, `notes`, `bookmark`, ...).
@@ -34,7 +34,7 @@ Front matter conventions (see existing files, not the `templates/` folder):
   `layouts/bookmark/single.html` renders the redirect, `layouts/bookmarks/list.html`
   renders the section list, and the RSS template reads `bookmarkUrl`. A missing value
   renders a "No external URL found" fallback instead of redirecting.
-- `links` is a single hand-maintained page (markdown list), not per-item pages.
+- `blogroll` is a single hand-maintained page (markdown list), not per-item pages.
 
 `templates/` is **not** Hugo archetypes — it holds Obsidian Templater templates
 (`{{title}}`, `{{date:...}}`). Hugo's archetype is `archetypes/default.md`. Both
@@ -43,7 +43,7 @@ are ignored from content (`ignoreFiles` in `hugo.toml`) / used by tooling.
 ## Layout / theming notes
 
 - `hugo.toml` declares `theme = 'hugo-bearblog'`, but `layouts/` overrides most
-  rendering (home, lists, single, RSS, bookmarks, links). Edit `layouts/`, not the
+  rendering (home, lists, single, RSS, bookmarks, blogroll). Edit `layouts/`, not the
   submodule themes (leave submodules unmodified).
 - `assets/main.css` is minified at build via `layouts/partials/custom_head.html`.
 - `resources/_gen/` is generated asset cache and is gitignored; don't hand-edit.

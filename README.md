@@ -83,12 +83,12 @@ Output is written to `public/`, which is gitignored.
 │   ├── notes/           # notes / book highlights
 │   ├── tils/            # short "Today I Learned" posts
 │   ├── bookmarks/       # redirect stubs to external links
-│   └── links/           # single hand-maintained list of links
+│   └── blogroll/        # single hand-maintained list of links
 ├── layouts/             # local templates that override the theme
 │   ├── _default/        # single, list, terms, RSS, summary
 │   ├── bookmark/        # redirect single for bookmark stubs
 │   ├── bookmarks/       # bookmark section list
-│   ├── links/           # links page
+│   ├── blogroll/        # blogroll page
 │   ├── partials/        # custom_head (CSS) and nav
 │   └── _shortcodes/     # tableOfContent
 ├── static/              # static assets served as-is (favicon)
@@ -109,7 +109,7 @@ Content lives under `content/` and is split into sections:
 | `notes` | `notes` | Notes and book highlights |
 | `tils` | `tils` | Short "Today I Learned" snippets |
 | `bookmarks` | `bookmark` | Redirect stubs to external URLs |
-| `links` | — | Single hand-maintained markdown list |
+| `blogroll` | — | Single hand-maintained markdown list |
 
 Each section has an `_index.md` that sets its title.
 
@@ -153,9 +153,9 @@ categories:
 `layouts/bookmarks/*` and the RSS template read `bookmarkUrl`. A missing value
 renders a "missing bookmarkUrl" placeholder.
 
-### Links
+### Blogroll
 
-`content/links/_index.md` is a single hand-maintained page — a markdown list, not
+`content/blogroll/_index.md` is a single hand-maintained page — a markdown list, not
 one page per link:
 
 ```markdown
@@ -179,7 +179,7 @@ Templater**, not Hugo archetypes. It holds `Basic.md` and `Bookmark.md` with
 ## Layouts and theming
 
 - `hugo.toml` declares `theme = 'hugo-bearblog'`, but `layouts/` overrides most
-  rendering (home, lists, single pages, RSS, bookmarks, links).
+  rendering (home, lists, single pages, RSS, bookmarks, blogroll).
 - **Edit `layouts/`, not the submodule themes.** Leave submodules unmodified.
 - `assets/main.css` is minified at build time through
   `layouts/partials/custom_head.html` (`resources.Get "main.css" | minify`).
