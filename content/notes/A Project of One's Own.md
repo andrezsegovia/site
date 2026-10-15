@@ -1,6 +1,7 @@
 ---
 title: A Project of One's Own
 date: 2026-10-06
+publishDate: 2026-10-15
 draft: false
 weight: 1
 type: notes
