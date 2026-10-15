@@ -1,13 +1,17 @@
-{{/* Compact bookmark card: Bookmark label, categories, publication date,
-     and title linked to the external bookmarkUrl. The whole card is a single
-     click target (stretched link in main.css) and highlights on hover.
-     Keeps the "feed-item" class so the infinite-scroll loader picks it up. */}}
+{{/* Compact bookmark card: kind badge (falls back to "Bookmark"), title linked
+     to the external bookmarkUrl, publication date, first-line summary, and
+     categories. The whole card is a single click target (stretched link in
+     main.css) and highlights on hover. Keeps the "feed-item" class so the
+     infinite-scroll loader picks it up. */}}
 {{ $url := or .Params.bookmarkUrl .RelPermalink }}
 {{ $isBookmark := .Params.bookmarkUrl }}
+{{ $label := or .Params.bookmarkKind "Bookmark" }}
 <article class="post h-entry feed-item archive-item bookmark-card">
-  <h2 class="archive-title"><a class="p-name u-url bookmark-link{{ if $isBookmark }} u-bookmark-of{{ end }}" href="{{ $url }}"{{ if $isBookmark }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Title }}</a><span class="post-type">Bookmark</span></h2>
+  <h2 class="archive-title"><a class="p-name u-url bookmark-link{{ if $isBookmark }} u-bookmark-of{{ end }}" href="{{ $url }}"{{ if $isBookmark }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Title }}</a><span class="post-type">{{ $label }}</span></h2>
   <div class="post-meta">
     <time class="dt-published" datetime='{{ .Date | time.Format "2006-01-02T15:04:05-07:00" }}'>{{ .Date | time.Format ":date_long" }}</time>
   </div>
+  {{ $summary := .Summary | plainify | strings.TrimSpace }}
+  {{ with $summary }}<div class="p-summary bookmark-summary">{{ . }}</div>{{ end }}
   {{ partial "post-tags.html" . }}
 </article>

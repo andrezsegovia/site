@@ -81,9 +81,8 @@
       {{- with $authorEmail }}<author>{{ . }}{{ with $authorName }} ({{ . }}){{ end }}</author>{{ end }}
       
       {{if eq $layout "bookmark"}} 
-      <description>
-        <p>This is a link to another site.</p>
-      </description>
+      {{- $summary := .Summary | plainify | strings.TrimSpace }}
+      <description>{{ with $summary }}{{ . | transform.XMLEscape | safeHTML }}{{ else }}This is a link to another site.{{ end }}</description>
       {{- else }}
       <description>{{ .Summary | transform.XMLEscape | safeHTML }}</description>
       {{- end }}

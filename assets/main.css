@@ -182,6 +182,16 @@ header {
   inset: 0;
 }
 
+.bookmark-card .bookmark-summary {
+  margin: 0.35rem 0 0;
+  font-size: 0.92rem;
+  line-height: 1.45;
+}
+
+.bookmark-card .bookmark-summary p {
+  margin: 0;
+}
+
 /* Keep the category links clickable above the stretched link. */
 .bookmark-card .post-tags {
   position: relative;
