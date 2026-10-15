@@ -8,7 +8,7 @@
      that month's items on the right. No pagination/infinite scroll. */}}
 {{ $item := .item | default "archive-item.html" }}
 <div class="monthly-feed">
-  {{ range .pages.GroupByDate "January 2006" }}
+  {{ range .pages.GroupByPublishDate "January 2006" }}
   <section class="month-group">
     <h2 class="month-label" id="{{ .Key | anchorize }}">{{ .Key }}</h2>
     <div class="month-items">

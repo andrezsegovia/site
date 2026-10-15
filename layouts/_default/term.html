@@ -4,5 +4,5 @@
   {{ with .Content }}{{ . }}{{ end }}
 </div>
 
-{{ partial "grouped-feed.html" (dict "page" . "pages" .Pages.ByDate.Reverse "item" "archive-item.html") }}
+{{ partial "grouped-feed.html" (dict "page" . "pages" .Pages.ByPublishDate.Reverse "item" "archive-item.html") }}
 {{ end }}

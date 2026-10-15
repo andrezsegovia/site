@@ -13,6 +13,11 @@ enableGitInfo = true
 
 ignoreFiles = ['content/templates', 'content/.obsidian']
 
+[frontmatter]
+    # `Lastmod` (and thus the "Updated on" date) comes only from an explicit
+    # `lastmod`/`modified` front matter field — never from Git or date fallbacks.
+    lastmod = ['lastmod']
+
 [markup]
     [markup.highlight]
         lineNos = true

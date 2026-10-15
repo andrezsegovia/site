@@ -1,6 +1,7 @@
 ---
 title: "La quietud es la clave de Ryan Holiday"
 date: 2025-07-09T18:04:52-05:00
+publishDate: 2025-07-09T18:04:52-05:00
 draft: false
 weight: 1
 type: notes

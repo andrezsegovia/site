@@ -1,6 +1,7 @@
 ---
 title: Agent Skills Standard
 date: 2026-10-13
+publishDate: 2026-10-13
 draft: false
 weight: 1
 type: bookmark

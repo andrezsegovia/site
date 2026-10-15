@@ -11,7 +11,7 @@
         </div>
         <h2><a href="{{ .Params.bookmarkUrl }}" class="u-bookmark-of h-cite u-url p-name">{{ .Title }}</a></h2>
         <div class="post-meta">
-            Published on <time class="dt-published" datetime='{{ .Date | time.Format "2006-01-02T15:04:05-07:00" }}'>{{ .Date | time.Format ":date_long" }}</time>
+            Published on <time class="dt-published" datetime='{{ .PublishDate | time.Format "2006-01-02T15:04:05-07:00" }}'>{{ .PublishDate | time.Format ":date_long" }}</time>
         </div>
         <div class="p-summary">
             {{ .Summary }}
@@ -28,7 +28,7 @@
             </div>
             <h2><a class="p-name u-url" href="{{ .RelPermalink }}">{{ .Title }}</a></h2>
             <div class="post-meta">
-                Published on <time class="dt-published" datetime='{{ .Date | time.Format "2006-01-02T15:04:05-07:00" }}'>{{ .Date | time.Format ":date_long" }}</time>
+                Published on <time class="dt-published" datetime='{{ .PublishDate | time.Format "2006-01-02T15:04:05-07:00" }}'>{{ .PublishDate | time.Format ":date_long" }}</time>
                 &#x2022;  
                 {{ .WordCount }} Words 
             </div>

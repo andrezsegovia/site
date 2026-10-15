@@ -1,6 +1,7 @@
 ---
 title: "My Simple Knowledge Management and Time Tracking System - Henrik Warne"
 date: 2025-03-20T19:14:37-05:00
+publishDate: 2025-03-20T19:14:37-05:00
 draft: false
 weight: 1
 type: bookmark

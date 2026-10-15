@@ -1,6 +1,7 @@
 ---
 title: "Taking Back The Web"
 date: 2025-03-07T17:26:40-05:00
+publishDate: 2025-03-07T17:26:40-05:00
 draft: false
 weight: 1
 type: notes

@@ -1,6 +1,7 @@
 ---
 title: "The differences between List.of and Arrays.asList"
 date: 2025-03-19T12:26:51-05:00
+publishDate: 2025-03-19T12:26:51-05:00
 draft: false
 weight: 1
 type: tils

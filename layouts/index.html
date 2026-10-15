@@ -8,7 +8,7 @@
     {{/* Home feed: every regular page that has a body, plus bookmark stubs
          (which have no body), newest first. */}}
     {{ $feed := slice }}
-    {{ range site.RegularPages.ByDate.Reverse }}
+    {{ range site.RegularPages.ByPublishDate.Reverse }}
       {{ if or (eq .Type "bookmark") (gt (len (strings.TrimSpace .RawContent)) 0) }}
         {{ $feed = $feed | append . }}
       {{ end }}
@@ -21,7 +21,7 @@
     {{/* Latest 20 bookmarks, newest first. Titles are rendered as cards
          matching the feed's bookmark cards. */}}
     {{ $bookmarks := slice }}
-    {{ range site.RegularPages.ByDate.Reverse }}
+    {{ range site.RegularPages.ByPublishDate.Reverse }}
       {{ if eq .Type "bookmark" }}
         {{ $bookmarks = $bookmarks | append . }}
       {{ end }}

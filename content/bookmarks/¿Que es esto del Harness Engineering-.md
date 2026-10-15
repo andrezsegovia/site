@@ -1,6 +1,7 @@
 ---
 title: ¿Que es esto del Harness Engineering?
 date: 2026-10-14
+publishDate: 2026-10-14
 draft: false
 weight: 1
 type: bookmark

@@ -1,6 +1,7 @@
 ---
 title: Esto es lo que aprendí adaptando Claude Code para SDD
 date: 2026-10-15
+publishDate: 2026-10-15
 draft: false
 weight: 1
 type: bookmark

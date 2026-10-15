@@ -12,7 +12,7 @@
         <section class="category-card">
           <h2><a href="{{ $term.RelPermalink }}">{{ $term.Title }}</a></h2>
           <ul>
-            {{ range .ByDate.Reverse }}
+            {{ range .ByPublishDate.Reverse }}
               {{ $url := or .Params.bookmarkUrl .RelPermalink }}
               {{ $external := .Params.bookmarkUrl }}
               <li><a href="{{ $url }}"{{ if $external }} target="_blank" rel="noopener noreferrer"{{ end }}>{{ .Title }}</a></li>

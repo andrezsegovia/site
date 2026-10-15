@@ -131,8 +131,10 @@ categories:
 - `type` is set to the section name (`tils`, `notes`, `bookmark`, ...).
 - `categories` is a YAML list.
 - `date` is the note's own date; `publishDate` is the day it was published to
-  the site. Notes published from the vault (`brain/publish.py`) set both and
-  refresh `publishDate` on `--force`.
+  the site. Every dated page carries `publishDate`, and the site orders and
+  renders by it (see [Layouts and theming](#layouts-and-theming)). Notes
+  published from the vault (`brain/publish.py`) set both and refresh
+  `publishDate` on `--force`.
 - Draft pages use `draft: true` and are hidden unless you build/serve with `-D`.
 
 ### Bookmarks
@@ -186,6 +188,11 @@ Templater**, not Hugo archetypes. It holds `Basic.md` and `Bookmark.md` with
 - `hugo.toml` declares `theme = 'hugo-bearblog'`, but `layouts/` overrides most
   rendering (home, lists, single pages, RSS, bookmarks, blogroll).
 - **Edit `layouts/`, not the submodule themes.** Leave submodules unmodified.
+- Content is ordered and grouped by `publishDate` (`ByPublishDate` /
+  `GroupByPublishDate`) across the home feed, archive, category and bookmark
+  lists, and RSS. All rendered dates (single pages, feed items, compact
+  archive/bookmark rows, and RSS `<pubDate>`) show `publishDate` as the
+  "Published on" date; `date` is kept only as the note's own date.
 - `assets/main.css` is minified at build time through
   `layouts/partials/custom_head.html` (`resources.Get "main.css" | minify`).
 - `resources/_gen/` is generated cache that happens to be committed — do not

@@ -1,6 +1,7 @@
 ---
 title: Context7
 date: 2026-10-13
+publishDate: 2026-10-13
 draft: false
 weight: 1
 type: bookmark

@@ -30,7 +30,14 @@ Front matter conventions (see existing files, not the `templates/` folder):
 - `type` is set to the section name (`tils`, `notes`, `bookmark`, ...).
 - `categories` is a YAML list; untriaged drafts use `- Draft`.
 - `date` is the note's own date; `publishDate` is the day it was published to the
-  site. Vault-published notes (`brain/publish.py`) set both.
+  site. Every dated page carries `publishDate`; vault-published notes
+  (`brain/publish.py`) set both and refresh `publishDate` on `--force`.
+  `blogroll/_index.md` intentionally has no `publishDate`.
+- `lastmod` is optional and opt-in. When set, `layouts/_default/single.html` renders
+  an "Updated on" date from it; when absent, no "Updated on" line is shown. It is
+  defined by `[frontmatter].lastmod = ['lastmod']` in `hugo.toml`, so it is **not**
+  derived from Git (`enableGitInfo`) or from `date`/`publishDate`. `modified` is an
+  accepted alias.
 - Draft pages set `draft: true` and won't render without `-D`.
 - Bookmarks are **redirect stubs**: `type: bookmark` + `params.bookmarkUrl: <url>`.
   `layouts/bookmark/single.html` renders the redirect, `layouts/bookmarks/list.html`
@@ -48,5 +55,9 @@ are ignored from content (`ignoreFiles` in `hugo.toml`) / used by tooling.
   rendering (home, lists, single, RSS, bookmarks, blogroll). Edit `layouts/`, not the
   submodule themes (leave submodules unmodified).
 - `assets/main.css` is minified at build via `layouts/partials/custom_head.html`.
+- Ordering uses `publishDate`, not `date`: feeds, the archive, category/bookmark
+  lists and RSS sort/group with `ByPublishDate`/`GroupByPublishDate`, and every
+  rendered date (single pages, feed items, compact archive/bookmark rows, RSS
+  `<pubDate>`) shows `publishDate` as a "Published on" date.
 - `resources/_gen/` is generated asset cache and is gitignored; don't hand-edit.
 - `public/` is gitignored. `content/.obsidian` is ignored.

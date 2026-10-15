@@ -1,6 +1,7 @@
 ---
 title: "The Small Web"
 date: 2025-03-07T09:08:00-05:00
+publishDate: 2025-03-07T09:08:00-05:00
 draft: false
 weight: 1
 type: notes

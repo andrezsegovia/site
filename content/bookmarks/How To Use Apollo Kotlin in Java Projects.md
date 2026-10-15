@@ -1,6 +1,7 @@
 ---
 title: "How To Use Apollo Kotlin in Java Projects"
 date: 2025-03-19T15:55:29-05:00
+publishDate: 2025-03-19T15:55:29-05:00
 draft: false
 weight: 1
 type: bookmark
