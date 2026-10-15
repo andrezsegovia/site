@@ -29,6 +29,8 @@ Content lives under `content/` and is split into sections: `articles`, `notes`,
 Front matter conventions (see existing files, not the `templates/` folder):
 - `type` is set to the section name (`tils`, `notes`, `bookmark`, ...).
 - `categories` is a YAML list; untriaged drafts use `- Draft`.
+- `date` is the note's own date; `publishDate` is the day it was published to the
+  site. Vault-published notes (`brain/publish.py`) set both.
 - Draft pages set `draft: true` and won't render without `-D`.
 - Bookmarks are **redirect stubs**: `type: bookmark` + `params.bookmarkUrl: <url>`.
   `layouts/bookmark/single.html` renders the redirect, `layouts/bookmarks/list.html`

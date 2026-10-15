@@ -119,6 +119,7 @@ Each section has an `_index.md` that sets its title.
 ---
 title: "My Note"
 date: 2025-03-19T09:16:36-05:00
+publishDate: 2025-03-19T09:16:36-05:00
 draft: false
 weight: 1
 type: notes              # set to the section name
@@ -129,6 +130,9 @@ categories:
 
 - `type` is set to the section name (`tils`, `notes`, `bookmark`, ...).
 - `categories` is a YAML list.
+- `date` is the note's own date; `publishDate` is the day it was published to
+  the site. Notes published from the vault (`brain/publish.py`) set both and
+  refresh `publishDate` on `--force`.
 - Draft pages use `draft: true` and are hidden unless you build/serve with `-D`.
 
 ### Bookmarks
@@ -140,6 +144,7 @@ Bookmarks are **redirect stubs**, not full pages. They use `type: bookmark` and 
 ---
 title: "A Single Text File Is My Productivity Hack"
 date: 2025-03-20T19:17:05-05:00
+publishDate: 2025-03-20T19:17:05-05:00
 draft: false
 weight: 1
 type: bookmark
